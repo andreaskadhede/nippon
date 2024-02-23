@@ -98,6 +98,8 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
+    background-color: var(--beige);
+    padding: 10px;
 }
 
 .dropdown-content a {
