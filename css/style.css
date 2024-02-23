@@ -6,13 +6,12 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: 0;
-    padding: 0;
+body {
     background: url('../img/texture.png') no-repeat center center fixed;
     background-size: cover;
-    z-index: 0;
+    font-family: montserrat;
 }
+
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
 :root {
@@ -32,8 +31,8 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 
 /* Anvender @font-face for at kunne bruge en bestemt font */
 @font-face {
-    font-family: headerFont;
-    src: url(font/grand.woff);
+    font-family: "headerFont";
+    src: url("/font/grand.woff") format("woff");
 }
 /* For at bruge denne font skrives det således:
 
@@ -125,6 +124,74 @@ main h2 {
 /********************************************************** SUCCES/ANNULLERET ********************************************************/
 /*************************************************************************************************************************************/
 
+
+/*************************************************************************************************************************************/
+/*************************************************************** FOOTER **************************************************************/
+/*************************************************************************************************************************************/
+
+.n-kontur {
+    width: 121px;
+    height: 128px;
+    margin-bottom: 102px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    z-index: 2;
+    padding: 0 29px;
+    height: 227px;
+    border-top: solid var(--red) 1px;
+}
+
+footer h2, footer a {
+    color: var(--red);
+    font-weight: 400;
+}
+
+footer img {
+    height: 60px;
+    padding: 0 15px;
+    margin-top: 77px;
+}
+
+#footer-left {
+    margin-top: 24px;
+}
+
+#footer-right {
+    text-align: right;
+    margin-top: 24px;
+}
+
+#footer-left h2 {
+    font-size: 32px;
+    line-height: 39px;
+    padding: 7px 0;
+    font-family: 'headerFont';
+}
+
+#footer-left a {
+    display: block;
+    font-size: 25px;
+    line-height: 39px;
+    padding: 7px 0;
+}
+
+#footer-right a {
+    display: block;
+    padding: 7px 0;
+    font-size: 32px;
+    line-height: 39px;
+}
 
 /*************************************************************************************************************************************/
 /*************************************************************** @MEDIA **************************************************************/
