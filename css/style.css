@@ -37,10 +37,11 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 /* For at bruge denne font skrives det således:
 
 div {
-    font-family: headerFont;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
 }
 
-Her giver får baggrunden på div'en den fastlagte beige farve.
+letter-spacing er vigtig for at få det til at ligne vores mockups
 */
 
 /*************************************************************************************************************************************/
@@ -52,7 +53,8 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 /************************************************************** FORSIDE **************************************************************/
 /*************************************************************************************************************************************/
 main h2 {
-    font-family: headerFont;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
     color: var(--dark-blue);
 }
 
@@ -176,7 +178,6 @@ footer img {
     font-size: 32px;
     line-height: 39px;
     padding: 7px 0;
-    font-family: 'headerFont';
 }
 
 #footer-left a {
