@@ -48,6 +48,124 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 /*************************************************************** NAVBAR **************************************************************/
 /*************************************************************************************************************************************/
 
+/* LOGO START */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo img {
+    width: 257px;
+    margin-top: 42px;
+    margin-left: 37px;
+}
+
+/* ændre farven på logo ved hover */
+#logo:hover .red, #logo .blue, #logo:hover .red, #logo .blue {
+    display: none;
+}
+
+/* ændre farven på logo ved hover */
+#logo:hover .blue, #logo:hover .blue {
+    display: block;
+}
+/* LOGO SLUT */
+
+
+/* NAV START */
+nav {
+    margin-top: 68px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.dropbtn {
+    color: var(--red);
+    font-size: 27px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* ændre farven på menupunkterne ved hover */
+.dropbtn:hover, .dropbtn:focus {
+    color: var(--dark-blue);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 400;
+    text-wrap: wrap;
+    padding: 0 0 10px;
+}
+
+.dropdown-content a:hover {
+    color: var(--dark-blue);
+}
+
+/* bruges af java script til at få dropdownmenuerne til at vises og fjernes */
+.show {display: block;}
+/* NAV SLUT */
+
+/* KNAPPER START */
+.knapper {
+    margin-top: 62px;
+    margin-right: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+#login {
+    cursor: pointer;
+    width: 122px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+/* ændre farven på login ved hover */
+#login:hover, #login:focus {
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+}
+
+
+#nav-hjerte img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#nav-kurv img {
+    width: 47px;
+    height: 36px;
+    cursor: pointer;
+}
+
+/* ændre farven på ikonerne ved hover */
+#nav-hjerte:hover .red, #nav-hjerte .blue, #nav-kurv:hover .red, #nav-kurv .blue {
+    display: none;
+}
+
+#nav-hjerte:hover .blue, #nav-kurv:hover .blue {
+    display: block;
+}
+/* KANPPER SLUT */
+
 
 /*************************************************************************************************************************************/
 /************************************************************** FORSIDE **************************************************************/
@@ -131,35 +249,40 @@ main h2 {
 /*************************************************************** FOOTER **************************************************************/
 /*************************************************************************************************************************************/
 
-.n-kontur {
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Fast logo på alle side i bunden */
+#n-kontur {
     width: 121px;
     height: 128px;
     margin-bottom: 102px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-footer {
+#footer {
     background-color: var(--beige);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    bottom: 0;
-    position: relative;
-    z-index: 2;
     padding: 0 29px;
     height: 227px;
     border-top: solid var(--red) 1px;
 }
 
-footer h2, footer a {
+#footer h2, footer a {
     color: var(--red);
     font-weight: 400;
 }
 
-footer img {
+#footer img {
     height: 60px;
     padding: 0 15px;
     margin-top: 77px;

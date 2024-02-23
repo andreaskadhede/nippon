@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside • Byg selv</title>
+    <title>Byg selv • Nippon</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,12 +21,56 @@
 </head>
 <body>
     <header>
+        <a id="logo" href="index.html">
+            <img class="red" src="img/logo/logo_tekst.webp" alt="nippon text logo">
+            <img class="blue" src="img/logo/logo_tekst_blue.webp" alt="nippon text logo">
+        </a>
 
         <!-- navigationsbar start -->
         <nav>
-
+            <div class="dropdown">
+                <button onclick="dropdown1()" class="dropbtn drop1">Måltidskasser</button>
+                <div id="myDropdown1" class="dropdown-content content1">
+                    <a href="yasai-kassen.html">Yasai<br>(Vegetar-kassen)</a>
+                    <a href="#">Kiso<br>(Basis-kassen)</a>
+                    <a href="#">Umi<br>(Hav-kassen)</a>
+                    <a href="byg-selv.html">Byg Selv</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="dropdown2()" class="dropbtn drop2">Om Nippon</button>
+                <div id="myDropdown2" class="dropdown-content content2">
+                    <a href="sadan-fungerer-det.html">Sådan fungere det</a>
+                    <a href="faq.html">FAG</a>
+                    <a href="#">Bæredygtighed</a>
+                    <a href="#">Anmeldelser</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="dropdown3()" class="dropbtn drop3">Din Konto</button>
+                <div id="myDropdown3" class="dropdown-content content3">
+                    <a href="#">Min måltidskasse</a>
+                    <a href="#">Mine favoritter</a>
+                    <a href="#">Tidligere måltidskasser</a>
+                </div>
+            </div>
         </nav>
         <!-- navigationsbar slut -->
+
+        <div class="knapper">
+            <button id="login">Log ind</button>
+            <div id="nav-hjerte">
+                <img class="red" src="img/ikoner/facebook.webp" alt="Farvoritter">
+                <img class="blue" src="img/ikoner/instagram.webp" alt="Farvoritter">
+            </div>
+            <div id="nav-kurv">
+                <img class="red" src="img/ikoner/facebook.webp" alt="Farvoritter">
+                <img class="blue" src="img/ikoner/instagram.webp" alt="Farvoritter">
+            </div>
+        </div>
+
     </header>
 
 
@@ -34,13 +78,37 @@
     <main>
 
 
+        <img class="n-kontur" src="img/logo/logo_n_kontur-04.webp" alt="">
     </main>
     <!-- main slut -->
 
 
     <!-- footer start -->
     <footer>
+        <!-- /* Fast logo på alle side i bunden */ -->
+        <img id="n-kontur" src="img/logo/logo_n_kontur-04.webp" alt="nippon letter logo">
 
+        <!-- footer start -->
+        <div id="footer">
+            <section id="footer-left">
+                <h2>Kundeservice</h2>
+                <a href="tel:+4537824691">+45 37 82 46 91</a>
+                <a href="mailto:nippon-info@gmail.com">Nippon-info@gmail.com</a>
+            </section>
+
+            <div id="footer-social">
+                <a href="#"><img src="img/ikoner/facebook.webp" alt="facebook icon"></a>
+                <a href="#"><img src="img/ikoner/instagram.webp" alt="facebook icon"></a>
+                <a href="#"><img src="img/ikoner/pinterest.webp" alt="pinterest icon"></a>
+            </div>
+
+            <div id="footer-right">
+                <a href="tilmeld-dig.html">Tilmeld</a>
+                <a href="#">Cookies</a>
+                <a href="#">Vilkår og Betingelser</a>
+            </div>
+        </div>
+        <!-- footer slut -->
     </footer>
     <!-- footer slut -->
     <script src="js/script.js"></script>
