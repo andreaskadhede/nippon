@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+main {
+    margin: 0;
+    padding: 0;
+    background: url('../img/texture.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
 :root {
     --dark-blue: #024158;
@@ -32,6 +40,7 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 div {
     font-family: headerFont;
 }
+
 Her giver får baggrunden på div'en den fastlagte beige farve.
 */
 
@@ -43,7 +52,40 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 /*************************************************************************************************************************************/
 /************************************************************** FORSIDE **************************************************************/
 /*************************************************************************************************************************************/
+main h2 {
+    font-family: headerFont;
+    color: var(--dark-blue);
+}
 
+.solid {
+    display: flex;
+    width: 70%;
+}
+
+.kasse {
+    display: flex;
+    width: 25%;
+}
+
+.kasse img {
+    width: 90%;
+}
+
+.bestil {
+    width: 10%;
+    height: 10%;
+}
+
+.kant {
+    display: flex;
+    width: 70%;  
+}
+
+.kant img {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
 
 /*************************************************************************************************************************************/
 /*********************************************************** YASAI KASSEN ************************************************************/
