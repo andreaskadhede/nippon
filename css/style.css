@@ -172,19 +172,33 @@ nav {
 /*************************************************************************************************************************************/
 /************************************************************** FORSIDE **************************************************************/
 /*************************************************************************************************************************************/
-main h2 {
+
+/* Velkommen start */
+main h2, main h1 {
+    display: flex;
+    justify-content: center;
     font-family: 'headerFont';
     letter-spacing: 2px;
     color: var(--dark-blue);
 }
 
+main p {
+    display: flex;
+    justify-content: center;
+    font-family: monteserrat;
+}
+
 .solid {
     display: flex;
+    justify-content: center;
     width: 70%;
 }
 
 .kasse {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 25%;
 }
 
