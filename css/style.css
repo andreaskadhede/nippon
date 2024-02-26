@@ -525,14 +525,15 @@ main .pv {
 .faq-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; 
+    align-items: center; 
     margin-top: 4rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
     margin-bottom: 2rem;
+    padding: 2rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -576,7 +577,8 @@ main .pv {
 
   /* Styler tekst nederst på siden */
   h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
     color: #024158;
   }
   
