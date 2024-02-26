@@ -9,7 +9,7 @@
 body {
     background: url('../img/texture.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: montserrat;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -185,7 +185,6 @@ main h2, main h1 {
 main p {
     display: flex;
     justify-content: center;
-    font-family: monteserrat;
 }
 
 .solid {
