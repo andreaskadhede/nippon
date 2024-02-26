@@ -99,14 +99,23 @@ document.addEventListener("DOMContentLoaded", function() {
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
-function toggleAnswer(id) {
+// Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
+
+  function toggleAnswer(id) {
     var answer = document.getElementById('answer' + id);
+    var question = document.getElementById('question' + id);
+  
     if (answer.style.display === 'block') {
       answer.style.display = 'none';
+      question.style.backgroundColor = '#CEDFE3'; // Skift tilbage til den oprindelige farve
     } else {
       answer.style.display = 'block';
+      question.style.backgroundColor = '#FFF9F2'; // Ændr farven til en ny farve
     }
   }
+  
+
+
 
 /*************************************************************************************************************************************/
 /************************************************************* DIN KURV **************************************************************/

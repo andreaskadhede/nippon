@@ -12,12 +12,25 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3 {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1, h2 {
     font-family: "headerFont";
     font-weight: 250;
     color: var(--dark-blue);
     letter-spacing: 2px;
     text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 10rem;
+    margin: 3rem;
 }
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
@@ -202,16 +215,6 @@ nav {
     font-size: 150px;
 }
 
-.h1f {
-    display: flex;
-    justify-content: center;
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
-    font-size: 50px;
-}
-
 main .pv {
     text-align: center;
     color: var(--dark-blue);
@@ -222,16 +225,35 @@ main .pv {
     font-weight: 400;
     line-height: 3.4375rem;
 }
+/* Velkommen slut */
+
+/* Vores måltidskasser start */
+.h1f {
+    display: flex;
+    justify-content: center;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
+}
 
 .solid {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 1148px;
     height: 656px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--light-blue);
+}
+
+.mks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .kasse {
@@ -246,9 +268,19 @@ main .pv {
     background: var(--beige);
 }
 
-.kasse img {
+.kasse .kas {
     width: 205px;
     height: 148px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.ikon {
+    margin-right: -11rem;
+    margin-top: -2rem;
+    width: 3.6875rem;
+    height: 3.6875rem;
+    z-index: 3;
 }
 
 .h3k {
@@ -262,7 +294,32 @@ main .pv {
     width: 10%;
     height: 10%;
 }
+/* Vores måltidskasser slut */
 
+/* Vidste du start */
+.nobg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);   
+} 
+
+.nobg h2 {
+    text-align: center;
+    font-size: 120px;
+}
+
+.nobg p {
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 3.125rem; /* 192.308% */
+}
+/* Vidste du slut */
+
+/* Sådan fungerer det start */
 .kant {
     display: flex;
     width: 70%;  
@@ -274,6 +331,8 @@ main .pv {
     width: 25%;
 }
 
+/* Sådan fungerer det slut */
+
 /*************************************************************************************************************************************/
 /*********************************************************** YASAI KASSEN ************************************************************/
 /*************************************************************************************************************************************/
@@ -282,6 +341,34 @@ main .pv {
 /*************************************************************************************************************************************/
 /************************************************************* BYG SELV **************************************************************/
 /*************************************************************************************************************************************/
+
+.maltidskasser-boks {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.maltidskasser {
+    text-align: center;
+
+}
+
+.kasser {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+    justify-content: center;
+}
+
+.ret {
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
+}
 
 
 /*************************************************************************************************************************************/
@@ -432,34 +519,57 @@ main .pv {
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
+/* Styler bokse med spørgsmål og svar */
+
 .faq-container {
-    width: 300px;
+    width: 72rem;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    margin-top: 2rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
-    padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     border: 1px solid #024158;
     border-radius: 100px;
+    display: flex;
+    flex-direction: column;
   }
   
   .faq-answer {
     display: none;
     padding: 10px;
-    background-color: #FFF9F2;
-    border: 1px solid #024158; /* Tilføjet en solid grænse med farve #024158 */
-    border-radius: 100px;
   }
   
+  .faq-pil {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .faq-pil h2 {
+    justify-self: center;
+  }
+
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
     font-size: 18px;
+    color: #024158;
+  }
+
+  /* Styler boksen i baggrunden */
+  .baggrundsboks {
+    background-color: #CEDFE3;
+    border: 3px solid #024158;
+    border-radius: 0.6rem;
+    width: 72rem;
+    height: 88rem;
+
   }
 
   /* Styler tekst nederst på siden */
