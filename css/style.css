@@ -12,6 +12,13 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 h1, h2, h3 {
     font-family: "headerFont";
     font-weight: 250;
@@ -201,16 +208,6 @@ nav {
     font-size: 150px;
 }
 
-.h1f {
-    display: flex;
-    justify-content: center;
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
-    font-size: 50px;
-}
-
 main .pv {
     text-align: center;
     color: var(--dark-blue);
@@ -221,16 +218,35 @@ main .pv {
     font-weight: 400;
     line-height: 3.4375rem;
 }
+/* Velkommen slut */
+
+/* Vores måltidskasser start */
+.h1f {
+    display: flex;
+    justify-content: center;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
+}
 
 .solid {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 1148px;
     height: 656px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--light-blue);
+}
+
+.mks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .kasse {
@@ -245,9 +261,19 @@ main .pv {
     background: var(--beige);
 }
 
-.kasse img {
+.kasse .kas {
     width: 205px;
     height: 148px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.ikon {
+    margin-right: -11rem;
+    margin-top: -2rem;
+    width: 3.6875rem;
+    height: 3.6875rem;
+    z-index: 3;
 }
 
 .h3k {
@@ -261,7 +287,32 @@ main .pv {
     width: 10%;
     height: 10%;
 }
+/* Vores måltidskasser slut */
 
+/* Vidste du start */
+.nobg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);   
+} 
+
+.nobg h2 {
+    text-align: center;
+    font-size: 120px;
+}
+
+.nobg p {
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 3.125rem; /* 192.308% */
+}
+/* Vidste du slut */
+
+/* Sådan fungerer det start */
 .kant {
     display: flex;
     width: 70%;  
@@ -272,6 +323,8 @@ main .pv {
     flex-direction: row;
     width: 25%;
 }
+
+/* Sådan fungerer det slut */
 
 /*************************************************************************************************************************************/
 /*********************************************************** YASAI KASSEN ************************************************************/
