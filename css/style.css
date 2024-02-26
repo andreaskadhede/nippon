@@ -79,6 +79,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    z-index: 5;
 }
 
 .dropbtn {
@@ -112,6 +113,11 @@ nav {
 }
 
 .dropdown-content a:hover {
+    color: var(--dark-blue);
+}
+
+/* ændre farven på den aktive fane */
+.active {
     color: var(--dark-blue);
 }
 
@@ -165,6 +171,15 @@ nav {
 
 #nav-hjerte:hover .blue, #nav-kurv:hover .blue {
     display: block;
+}
+
+/* ændre farven på den aktive fane */
+#activeimg {
+    display: block;
+}
+
+#inactiveimg {
+    display: none;
 }
 /* KANPPER SLUT */
 
