@@ -330,18 +330,13 @@ main .pv {
     flex-direction: row;
     width: 25%;
 }
-
 /* Sådan fungerer det slut */
 
 /*************************************************************************************************************************************/
-/*********************************************************** YASAI KASSEN ************************************************************/
+/***************************************************** YASAI KASSEN + BYG SELV *******************************************************/
 /*************************************************************************************************************************************/
 
-
-/*************************************************************************************************************************************/
-/************************************************************* BYG SELV **************************************************************/
-/*************************************************************************************************************************************/
-
+/* overskrifter */
 .maltidskasseh1 {
     margin-bottom: 0;
 }
@@ -351,6 +346,7 @@ main .pv {
     margin-bottom: 7.5rem;
 }
 
+/* valgmulioghedsknapper */
 .maltidknapper {
     display: flex;
     margin-bottom: 7.5rem;
@@ -379,6 +375,19 @@ main .pv {
     justify-content: center;
 }
 
+.maltidknapper button:hover {
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    color: var(--red);
+}
+
+#activebtn:hover {
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--beige);
+}
+
 .knap1 {
     width: 60%;
     text-align: left;
@@ -388,6 +397,7 @@ main .pv {
 .knap2 {
     width: 20%;
 }
+
 .knapperh3 {
     color: var(--dark-blue);
     text-align: center;
@@ -395,13 +405,13 @@ main .pv {
     font-weight: 400;
 }
 
+/* byg selv informations liste */
 #byg-selv-list {
     border: 3px solid var(--dark-blue);
     border-radius: 10px;
     padding: 55px;
     margin-bottom: 64px;
 }
-
 
 #byg-selv-list li {
     color: var(--dark-blue);
@@ -411,6 +421,7 @@ main .pv {
     list-style: decimal inside;
 }
 
+/* måltidskasser */
 .maltidskasser-boks {
     background-color: var(--light-blue);
     display: flex;
@@ -423,6 +434,7 @@ main .pv {
     gap: 45px;
 }
 
+/* overskrift - ugens udvalg/ugens menu */
 #ugens {
     margin: 98px 0 30px;
     font-size: 5rem;
@@ -450,6 +462,7 @@ main .pv {
     font-size: 50px;
 }
 
+/* måltid start */
 .ret {
     width: 269px;
     height: 313px;
@@ -501,6 +514,7 @@ main .pv {
     font-weight: 400;
     line-height: 30px;
 }
+/* måltid slut */
 
 .knapperbund {
     display: flex;
@@ -531,6 +545,7 @@ main .pv {
     font-weight: 700;
 }
 
+/* ændre farven på valgmulighedskanpperne i forhold til, hvilken side man befinde sig på */
 #activebtn {
     border-radius: 10px;
     border: 2px solid var(--red);

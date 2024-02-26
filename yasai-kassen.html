@@ -78,17 +78,19 @@
     <!-- main start -->
     <main>
 
+        <!-- overskirfter -->
         <h1 class="maltidskasseh1">Din måltidskasse</h1>
         <h2 class="maltidskasseh2">Yasai kassen</h2>
 
 
+        <!-- valgmulighedsknapper start-->
         <div class="maltidknapper">
             <div>
                 <h3 class="knapperh3">Vælg kassetype</h3>
-                <button>
+                <button onclick="location.href='yasai-kassen.html';" >
                     <p>Ugens menu</p>
                 </button>
-                <button id="activebtn">
+                <button onclick="location.href='byg-selv.html';" id="activebtn">
                     <p>Byg selv</p>
                 </button>
             </div>
@@ -105,7 +107,10 @@
                 </button>
             </div>
         </div>
+        <!-- valgmulighedsknapper start-->
 
+
+        <!-- måltidskasser start -->
         <div class="maltidskasser-boks">
             <h2 id="ugens">Ugens menu</h2>
 
@@ -158,12 +163,13 @@
                         <p class="beskrivelse-ret">Med bok choy og shitake svampe.</p>
                     </div>
                 </div>
-                
             </div>
+        <!-- måltidskasser start -->
 
+            <!-- bestil + pris -->
             <div class="knapperbund">
                 <p class="pris">Samplet pris 400 DKK</p>
-                <button class="bestil">Bestil her</button>
+                <button onclick="location.href='din-kurv.html';" class="bestil">Bestil her</button>
             </div>
             
         </div>
