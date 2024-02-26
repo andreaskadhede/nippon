@@ -534,10 +534,11 @@ main .pv {
     background-color: #CEDFE3;
     margin-bottom: 2rem;
     padding: 2rem;
+    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #024158;
+    border: 2px solid #024158;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
@@ -561,8 +562,9 @@ main .pv {
 
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #024158;
+    width: 5%;
   }
 
   /* Styler boksen i baggrunden */
@@ -580,13 +582,14 @@ main .pv {
     font-size: 1.8rem;
     font-weight: lighter;
     color: #024158;
+    width: 95%;
   }
 
   /* Styler tekst nederst på siden */
   .h4-faq {
     font-size: 1.8rem;
     font-weight: lighter;
-    line-height: 2.5rem;
+    line-height: 3rem;
     color: #024158;
     width: 72rem;
     text-align: center;
