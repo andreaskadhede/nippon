@@ -12,6 +12,12 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: "headerFont";
+    font-weight: 250;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
+}
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
 :root {
@@ -79,6 +85,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    z-index: 5;
 }
 
 .dropbtn {
@@ -112,6 +119,11 @@ nav {
 }
 
 .dropdown-content a:hover {
+    color: var(--dark-blue);
+}
+
+/* ændre farven på den aktive fane */
+.active {
     color: var(--dark-blue);
 }
 
@@ -166,6 +178,15 @@ nav {
 #nav-hjerte:hover .blue, #nav-kurv:hover .blue {
     display: block;
 }
+
+/* ændre farven på den aktive fane */
+#activeimg {
+    display: block;
+}
+
+#inactiveimg {
+    display: none;
+}
 /* KANPPER SLUT */
 
 
@@ -174,36 +195,66 @@ nav {
 /*************************************************************************************************************************************/
 
 /* Velkommen start */
-main h2, main .h1f {
+.velkommen {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+}
+
+.h1f {
     display: flex;
     justify-content: center;
     font-family: 'headerFont';
     letter-spacing: 2px;
     color: var(--dark-blue);
     font-weight: 250;
+    font-size: 50px;
 }
 
-main p {
-    display: flex;
-    justify-content: center;
+main .pv {
+    text-align: center;
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.4375rem;
 }
 
 .solid {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 70%;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--light-blue);
 }
 
 .kasse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
 }
 
 .kasse img {
-    width: 90%;
+    width: 205px;
+    height: 148px;
+}
+
+.h3k {
+    text-align: center;
+    color: var(--dark-blue);
+    width: 269px;
+    height: 41px;
 }
 
 .bestil {
@@ -340,7 +391,42 @@ main p {
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
+.faq-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-question {
+    background-color: #CEDFE3;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #024158;
+    border-radius: 100px;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #FFF9F2;
+    border: 1px solid #024158; /* Tilføjet en solid grænse med farve #024158 */
+    border-radius: 100px;
+  }
+  
+  /* Styler "arrow", der indikerer, at det er klikbart */
+  .arrow {
+    font-size: 18px;
+  }
 
+  /* Styler tekst nederst på siden */
+  h3 {
+    font-size: 2rem;
+    color: #024158;
+  }
+  
 /*************************************************************************************************************************************/
 /************************************************************* DIN KURV **************************************************************/
 /*************************************************************************************************************************************/
