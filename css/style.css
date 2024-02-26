@@ -491,12 +491,11 @@ main .pv {
 /* Styler bokse med spørgsmål og svar */
 
 .faq-container {
-    width: 72rem;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrerer indholdet vertikalt */
     align-items: center; /* Centrerer indholdet horisontalt */
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   
   .faq-question {
@@ -509,6 +508,8 @@ main .pv {
     border-radius: 100px;
     display: flex;
     flex-direction: column;
+    width: 65rem;
+    height: 6rem;
   }
   
   .faq-answer {
@@ -537,7 +538,7 @@ main .pv {
     border: 3px solid #024158;
     border-radius: 0.6rem;
     width: 72rem;
-    height: 88rem;
+    height: 78rem;
 
   }
 
