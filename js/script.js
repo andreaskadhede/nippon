@@ -58,6 +58,59 @@ function dropdown3() {
 /*************************************************************************************************************************************/
 
 
+// slider ved byg selv menuen
+function moveToTheLeft1() {
+  let first = document.getElementsByClassName("ret")[0];
+  const boks = document.getElementsByClassName("slider1")[0];
+
+  boks.removeChild(first);
+  boks.appendChild(first);
+
+}
+
+function moveToTheRight1() {
+  let last = document.getElementsByClassName("ret")[2];
+  const boks = document.getElementsByClassName("slider1")[0];
+
+  boks.removeChild(last);
+  boks.insertBefore(last, boks.firstChild);
+}
+
+function moveToTheLeft2() {
+  let first = document.getElementsByClassName("ret2")[0];
+  const boks = document.getElementsByClassName("slider2")[0];
+
+  boks.removeChild(first);
+  boks.appendChild(first);
+
+}
+
+function moveToTheRight2() {
+  let last = document.getElementsByClassName("ret2")[2];
+  const boks = document.getElementsByClassName("slider2")[0];
+
+  boks.removeChild(last);
+  boks.insertBefore(last, boks.firstChild);
+}
+
+function moveToTheLeft3() {
+  let first = document.getElementsByClassName("ret3")[0];
+  const boks = document.getElementsByClassName("slider3")[0];
+
+  boks.removeChild(first);
+  boks.appendChild(first);
+
+}
+
+function moveToTheRight3() {
+  let last = document.getElementsByClassName("ret3")[2];
+  const boks = document.getElementsByClassName("slider3")[0];
+
+  boks.removeChild(last);
+  boks.insertBefore(last, boks.firstChild);
+}
+
+
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/

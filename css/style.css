@@ -587,6 +587,7 @@ main .pv {
     border-radius: 10px;
     padding: 55px;
     margin-bottom: 64px;
+    width: 90%;
 }
 
 #byg-selv-list li {
@@ -626,16 +627,20 @@ main .pv {
     text-align: center;
 }
 
-.kasser {
+.kasser, .slider1, .slider2, .slider3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 60px 0;
 }
 
 .kasser-pil {
     font-size: 50px;
+    border: none;
+    background: none;
 }
 
 /* måltid start */
@@ -662,7 +667,7 @@ main .pv {
     margin: 152px 0 0 195px;
 }
 
-.hjerte-ret {
+.hjerte-ret, .hjerte-fuldt-ret {
     width: 21px;
     height: 21px;
     position: absolute;
@@ -690,6 +695,16 @@ main .pv {
     font-weight: 400;
     line-height: 30px;
 }
+
+.hjerte-fuldt-ret:hover {
+    opacity: 100;
+}
+
+.hjerte-fuldt-ret {
+    opacity: 0;
+}
+
+
 /* måltid slut */
 
 .knapperbund {
