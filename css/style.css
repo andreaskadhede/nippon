@@ -27,6 +27,12 @@ h1, h2 {
     text-align: center;
 }
 
+h1 {
+    font-size: 8rem;
+    line-height: 10rem;
+    margin: 3rem;
+}
+
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
 :root {
     --dark-blue: #024158;
@@ -497,7 +503,201 @@ main .pv {
 /************************************************************* BYG SELV **************************************************************/
 /*************************************************************************************************************************************/
 
+.maltidskasseh1 {
+    margin-bottom: 0;
+}
 
+.maltidskasseh2 {
+    font-size: 6rem;
+    margin-bottom: 7.5rem;
+}
+
+.maltidknapper {
+    display: flex;
+    margin-bottom: 7.5rem;
+    gap: 68px;
+}
+
+.maltidknapper div {
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.maltidknapper button {
+    width: 231px;
+    height: 63px;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    color: #FFF9F2;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.knap1 {
+    width: 60%;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.knap2 {
+    width: 20%;
+}
+.knapperh3 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#byg-selv-list {
+    border: 3px solid var(--dark-blue);
+    border-radius: 10px;
+    padding: 55px;
+    margin-bottom: 64px;
+}
+
+
+#byg-selv-list li {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    list-style: decimal inside;
+}
+
+.maltidskasser-boks {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    margin-bottom: 125px;
+    gap: 45px;
+}
+
+#ugens {
+    margin: 98px 0 30px;
+    font-size: 5rem;
+}
+
+.maltidskasser-boks h3 {
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.maltidskasser {
+    text-align: center;
+}
+
+.kasser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.kasser-pil {
+    font-size: 50px;
+}
+
+.ret {
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
+    margin: 0 20px;
+}
+
+.ret-img {
+    width: 205px;
+    height: 148px;
+    border-radius: 10px;
+    margin: 36px 32px 17px 32px;
+}
+
+.icon-ret {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    margin: 152px 0 0 195px;
+}
+
+.hjerte-ret {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    margin: 202px 0 0 21px;
+}
+
+.navn-ret {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tid-ret {
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.beskrivelse-ret {
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.knapperbund {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 60px 60px 60px;
+}
+
+.pris {
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+    width: 402px;
+    height: 80px;
+    color: #024158;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.bestil {
+    border-radius: 10px;
+    background: var(--dark-blue);
+    width: 276px;
+    height: 80px;
+    color: var(--beige);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#activebtn {
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    color: var(--red);
+}
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
@@ -508,6 +708,19 @@ main .pv {
     margin: 3rem;
 }
 
+.info-sadan-fungerer-det {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #024158;
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 1rem;
+}
+
 .infographic {
     display: flex;
     justify-content: center;
@@ -516,9 +729,22 @@ main .pv {
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     height: 148rem;
+    width: 80%;
 }
+
+/* Animation for the visible class */
+.infographic > section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .infographic > section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .spisepinde {
     width: 850px;
@@ -610,28 +836,41 @@ main .pv {
     text-align: center;
 }
 
+.tekst-infographic {
+    font-weight: 300;
+    font-size: 25px;
+    color: #024158;
+}
+
 
 /*************************************************************************************************************************************/
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
+/* Styler bokse med spørgsmål og svar */
+
 .faq-container {
-    width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 4rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
-    padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #024158;
+    border: 2px solid #024158;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
+    width: 65rem;
+    height: 6rem;
   }
   
   .faq-answer {
@@ -642,7 +881,6 @@ main .pv {
   .faq-pil {
     display: flex;
     flex-direction: row;
-    justify-content: end;
   }
 
   .faq-pil h2 {
@@ -651,7 +889,9 @@ main .pv {
 
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
-    font-size: 18px;
+    font-size: 1.8rem;
+    color: #024158;
+    width: 5%;
   }
 
   /* Styler boksen i baggrunden */
@@ -660,14 +900,28 @@ main .pv {
     border: 3px solid #024158;
     border-radius: 0.6rem;
     width: 72rem;
-    height: 88rem;
+    height: 78rem;
 
   }
 
-  /* Styler tekst nederst på siden */
-  h3 {
-    font-size: 2rem;
+  /* Styler spørgsmål i boksene */
+  .h3-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
     color: #024158;
+    width: 95%;
+  }
+
+  /* Styler tekst nederst på siden */
+  .h4-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    color: #024158;
+    width: 72rem;
+    text-align: center;
+    margin: 5rem;
+
   }
   
 /*************************************************************************************************************************************/
@@ -721,7 +975,7 @@ footer {
     border-top: solid var(--red) 1px;
 }
 
-#footer h2, footer a {
+#footer h3, footer a {
     color: var(--red);
     font-weight: 400;
 }
@@ -741,7 +995,7 @@ footer {
     margin-top: 24px;
 }
 
-#footer-left h2 {
+#footer-left h3 {
     font-size: 32px;
     line-height: 39px;
     padding: 7px 0;
