@@ -238,7 +238,7 @@ main p {
 
 .undersideh1 {
     font-size: 4rem;
-    line-height: 160px;
+    line-height: 10rem;
     margin: 2rem;
 }
 
@@ -247,19 +247,93 @@ main p {
     justify-content: center;
     border-radius: 10px;
     border: 3px solid #024158;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 6rem;
+    margin-right: 6rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    height: 148rem;
 }
 
 .spisepinde {
     width: 850px;
-    
+    position: absolute;
+}
+
+.computer {
+    width: 15rem;
+    margin-bottom: -2rem;
+}
+
+.besog-nippon{
+    position: absolute;
+    margin-top: 20rem;
+    margin-right: 38rem;
+
+}
+
+.retter {
+    width: 18rem;
+}
+
+.vaelg-maaltidskasse {
+    position: absolute;
+    margin-top: 38rem;
+    margin-left: 38rem;
+}
+
+.ur{
+    width: 15rem;
+    margin-bottom: -2rem;
+}
+
+.levering {
+    position: absolute;
+    margin-top: 57rem;
+    margin-right: 30rem;   
+}
+
+.dor {
+    width: 12rem;
+}
+
+.levering-dor{
+    position: absolute;
+    margin-top: 72rem;
+    margin-left: 32rem;
+}
+
+.pan {
+    width: 15rem;
+}
+
+.madlavning {
+    position: absolute;
+    margin-top: 95rem;
+    margin-right: 35rem;
 }
 
 
+.mad {
+    width: 15rem;
+    margin-bottom: -2rem;
+}
 
+.maaltid{
+    position: absolute;
+    margin-top: 110rem;
+    margin-left: 30rem;
+}
+
+.skraldespande {
+    width: 15rem;
+    margin-bottom: -2.5rem;
+}
+
+.genbrug {
+    position: absolute;
+    margin-top: 128rem;
+    margin-right: 33rem;
+}
 
 
 /*************************************************************************************************************************************/
