@@ -342,24 +342,110 @@ main .pv {
 /************************************************************* BYG SELV **************************************************************/
 /*************************************************************************************************************************************/
 
+.maltidskasseh1 {
+    margin-bottom: 0;
+}
+
+.maltidskasseh2 {
+    font-size: 6rem;
+    margin-bottom: 7.5rem;
+}
+
+#maltidknapper {
+    display: flex;
+    margin-bottom: 7.5rem;
+    gap: 68px;
+}
+
+#maltidknapper div {
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#maltidknapper button {
+    width: 231px;
+    height: 63px;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    color: #FFF9F2;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.knap1 {
+    width: 80%;
+}
+
+.knap2 {
+    width: 20%;
+}
+.knapperh3 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#yasai-list {
+    border: 3px solid var(--dark-blue);
+    border-radius: 10px;
+    padding: 55px;
+    margin-bottom: 64px;
+}
+
+
+#yasai-list li {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    list-style: decimal inside;
+}
+
 .maltidskasser-boks {
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     justify-content: center;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    margin-bottom: 125px;
+    gap: 45px;
+}
+
+#ugens {
+    margin: 98px 0 50px;
+    font-size: 5rem;
+}
+
+.maltidskasser-boks h3 {
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 400;
 }
 
 .maltidskasser {
     text-align: center;
-
 }
 
 .kasser {
     display: flex;
     flex-direction: row;
-    gap: 61px;
     justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.kasser-pil {
+    font-size: 50px;
 }
 
 .ret {
@@ -368,8 +454,80 @@ main .pv {
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--beige);
+    margin: 0 20px;
 }
 
+.ret-img {
+    width: 205px;
+    height: 148px;
+    border-radius: 10px;
+    margin: 36px 32px 17px 32px;
+}
+
+.icon-ret {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    margin: 152px 0 0 195px;
+}
+
+.hjerte-ret {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    margin: 202px 0 0 21px;
+}
+
+.navn-ret {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tid-ret {
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.beskrivelse-ret {
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.knapperbund {
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 60px 60px 60px;
+}
+
+.pris {
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+    width: 402px;
+    height: 80px;
+    color: #024158;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.bestil {
+    border-radius: 10px;
+    background: var(--dark-blue);
+    width: 276px;
+    height: 80px;
+    color: var(--beige);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
 
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
@@ -596,7 +754,7 @@ footer {
     border-top: solid var(--red) 1px;
 }
 
-#footer h2, footer a {
+#footer h3, footer a {
     color: var(--red);
     font-weight: 400;
 }
@@ -616,7 +774,7 @@ footer {
     margin-top: 24px;
 }
 
-#footer-left h2 {
+#footer-left h3 {
     font-size: 32px;
     line-height: 39px;
     padding: 7px 0;
