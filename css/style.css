@@ -174,7 +174,7 @@ nav {
 /*************************************************************************************************************************************/
 
 /* Velkommen start */
-main h2, main h1 {
+main h2, main .h1f {
     display: flex;
     justify-content: center;
     font-family: 'headerFont';
@@ -185,7 +185,6 @@ main h2, main h1 {
 main p {
     display: flex;
     justify-content: center;
-    font-family: monteserrat;
 }
 
 .solid {
