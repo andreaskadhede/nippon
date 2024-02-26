@@ -174,36 +174,70 @@ nav {
 /*************************************************************************************************************************************/
 
 /* Velkommen start */
-main h2, main .h1f {
+.velkommen {
     display: flex;
     justify-content: center;
     font-family: 'headerFont';
     letter-spacing: 2px;
     color: var(--dark-blue);
     font-weight: 250;
+    font-size: 150px;
 }
 
-main p {
+.h1f {
     display: flex;
     justify-content: center;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
+}
+
+main .pv {
+    text-align: center;
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.4375rem;
 }
 
 .solid {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 70%;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--light-blue);
 }
 
 .kasse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
 }
 
 .kasse img {
-    width: 90%;
+    width: 205px;
+    height: 148px;
+}
+
+.h3k {
+    text-align: center;
+    color: var(--dark-blue);
+    width: 269px;
+    height: 41px;
 }
 
 .bestil {
