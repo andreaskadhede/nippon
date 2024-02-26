@@ -242,9 +242,23 @@ main p {
     margin: 2rem;
 }
 
-.spisepinde {
-    width: 900px;
+.infographic {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #024158;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
+
+.spisepinde {
+    width: 850px;
+    
+}
+
+
 
 
 
