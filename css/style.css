@@ -575,11 +575,23 @@ main .pv {
 
   }
 
-  /* Styler tekst nederst på siden */
-  h3 {
+  /* Styler spørgsmål i boksene */
+  .h3-faq {
     font-size: 1.8rem;
     font-weight: lighter;
     color: #024158;
+  }
+
+  /* Styler tekst nederst på siden */
+  .h4-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    color: #024158;
+    width: 72rem;
+    text-align: center;
+    margin: 5rem;
+
   }
   
 /*************************************************************************************************************************************/
