@@ -16,6 +16,7 @@ h1, h2, h3 {
     font-family: "headerFont";
     font-weight: 250;
     color: var(--dark-blue);
+    letter-spacing: 2px;
 }
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
