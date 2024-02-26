@@ -9,7 +9,7 @@
 body {
     background: url('../img/texture.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: montserrat;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -174,18 +174,18 @@ nav {
 /*************************************************************************************************************************************/
 
 /* Velkommen start */
-main h2, main h1 {
+main h2, main .h1f {
     display: flex;
     justify-content: center;
     font-family: 'headerFont';
     letter-spacing: 2px;
     color: var(--dark-blue);
+    font-weight: 250;
 }
 
 main p {
     display: flex;
     justify-content: center;
-    font-family: monteserrat;
 }
 
 .solid {
@@ -235,6 +235,17 @@ main p {
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
+
+.undersideh1 {
+    font-size: 4rem;
+    line-height: 160px;
+    margin: 2rem;
+}
+
+.spisepinde {
+    width: 900px;
+}
+
 
 
 /*************************************************************************************************************************************/
