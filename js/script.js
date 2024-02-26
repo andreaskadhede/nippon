@@ -73,18 +73,6 @@ function dropdown3() {
 /*************************************************************************************************************************************/
 
 // Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
-// Funktionen finder det relevante svar-element ved at bruge document.getElementById
-
-// function toggleAnswer(id) {
-//     var answer = document.getElementById('answer' + id);
-//     if (answer.style.display === 'block') {
-//       answer.style.display = 'none';
-//     } else {
-//       answer.style.display = 'block';
-//     }
-
-
-//   }
 
   function toggleAnswer(id) {
     var answer = document.getElementById('answer' + id);

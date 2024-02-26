@@ -463,15 +463,17 @@ main .pv {
 /* Styler bokse med spørgsmål og svar */
 
 .faq-container {
-    width: 300px;
+    width: 72rem;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    margin-top: 2rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
-    padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -489,7 +491,6 @@ main .pv {
   .faq-pil {
     display: flex;
     flex-direction: row;
-    justify-content: end;
   }
 
   .faq-pil h2 {
@@ -499,6 +500,7 @@ main .pv {
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
     font-size: 18px;
+    color: #024158;
   }
 
   /* Styler boksen i baggrunden */
