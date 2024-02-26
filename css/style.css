@@ -294,6 +294,19 @@ main .pv {
     margin: 3rem;
 }
 
+.info-sadan-fungerer-det {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #024158;
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 1rem;
+}
+
 .infographic {
     display: flex;
     justify-content: center;
@@ -302,9 +315,21 @@ main .pv {
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     height: 148rem;
 }
+
+/* Animation for the visible class */
+.infographic > section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .infographic > section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .spisepinde {
     width: 850px;
@@ -394,6 +419,12 @@ main .pv {
     margin-top: 125rem;
     margin-right: 37rem;
     text-align: center;
+}
+
+.tekst-infographic {
+    font-weight: 300;
+    font-size: 25px;
+    color: #024158;
 }
 
 
