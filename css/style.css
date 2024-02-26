@@ -12,6 +12,11 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: "headerFont";
+    font-weight: 250;
+    color: var(--dark-blue);
+}
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
 :root {
@@ -192,10 +197,6 @@ nav {
 main h2, main .h1f {
     display: flex;
     justify-content: center;
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
 }
 
 main p {
