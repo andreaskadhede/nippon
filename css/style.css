@@ -252,7 +252,42 @@ main p {
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
+.faq-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-question {
+    background-color: #CEDFE3;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #024158;
+    border-radius: 100px;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #FFF9F2;
+    border: 1px solid #024158; /* Tilføjet en solid grænse med farve #024158 */
+    border-radius: 100px;
+  }
+  
+  /* Styler "arrow", der indikerer, at det er klikbart */
+  .arrow {
+    font-size: 18px;
+  }
 
+  /* Styler tekst nederst på siden */
+  h3 {
+    font-size: 2rem;
+    color: #024158;
+  }
+  
 /*************************************************************************************************************************************/
 /************************************************************* DIN KURV **************************************************************/
 /*************************************************************************************************************************************/
