@@ -336,6 +336,34 @@ main .pv {
 /************************************************************* BYG SELV **************************************************************/
 /*************************************************************************************************************************************/
 
+.maltidskasser-boks {
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.maltidskasser {
+    text-align: center;
+
+}
+
+.kasser {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+    justify-content: center;
+}
+
+.ret {
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
+}
+
 
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
