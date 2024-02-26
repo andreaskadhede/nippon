@@ -67,24 +67,39 @@ function dropdown3() {
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".infographic > section");
+  
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    function handleScroll() {
+      sections.forEach((section, index) => {
+        if (isInViewport(section)) {
+          section.classList.add("visible");
+        }
+      });
+    }
+  
+    // Initial check on page load
+    handleScroll();
+  
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
+  });
+  
 /*************************************************************************************************************************************/
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
 // Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
-// Funktionen finder det relevante svar-element ved at bruge document.getElementById
-
-// function toggleAnswer(id) {
-//     var answer = document.getElementById('answer' + id);
-//     if (answer.style.display === 'block') {
-//       answer.style.display = 'none';
-//     } else {
-//       answer.style.display = 'block';
-//     }
-
-
-//   }
 
   function toggleAnswer(id) {
     var answer = document.getElementById('answer' + id);

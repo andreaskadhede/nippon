@@ -539,6 +539,19 @@ main .pv {
     margin: 3rem;
 }
 
+.info-sadan-fungerer-det {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #024158;
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 1rem;
+}
+
 .infographic {
     display: flex;
     justify-content: center;
@@ -547,9 +560,22 @@ main .pv {
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     height: 148rem;
+    width: 80%;
 }
+
+/* Animation for the visible class */
+.infographic > section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .infographic > section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .spisepinde {
     width: 850px;
@@ -641,6 +667,12 @@ main .pv {
     text-align: center;
 }
 
+.tekst-infographic {
+    font-weight: 300;
+    font-size: 25px;
+    color: #024158;
+}
+
 
 /*************************************************************************************************************************************/
 /**************************************************************** FAQ ****************************************************************/
@@ -649,22 +681,27 @@ main .pv {
 /* Styler bokse med spørgsmål og svar */
 
 .faq-container {
-    width: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 4rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
-    padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #024158;
+    border: 2px solid #024158;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
+    width: 65rem;
+    height: 6rem;
   }
   
   .faq-answer {
@@ -675,7 +712,6 @@ main .pv {
   .faq-pil {
     display: flex;
     flex-direction: row;
-    justify-content: end;
   }
 
   .faq-pil h2 {
@@ -684,7 +720,9 @@ main .pv {
 
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
-    font-size: 18px;
+    font-size: 1.8rem;
+    color: #024158;
+    width: 5%;
   }
 
   /* Styler boksen i baggrunden */
@@ -693,14 +731,28 @@ main .pv {
     border: 3px solid #024158;
     border-radius: 0.6rem;
     width: 72rem;
-    height: 88rem;
+    height: 78rem;
 
   }
 
-  /* Styler tekst nederst på siden */
-  h3 {
-    font-size: 2rem;
+  /* Styler spørgsmål i boksene */
+  .h3-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
     color: #024158;
+    width: 95%;
+  }
+
+  /* Styler tekst nederst på siden */
+  .h4-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    color: #024158;
+    width: 72rem;
+    text-align: center;
+    margin: 5rem;
+
   }
   
 /*************************************************************************************************************************************/
