@@ -78,17 +78,19 @@
     <!-- main start -->
     <main>
 
+        <!-- overskrifter -->
         <h1 class="maltidskasseh1">Din måltidskasse</h1>
         <h2 class="maltidskasseh2">Byg selv</h2>
 
 
+        <!-- valgmulighedsknapper start -->
         <div class="maltidknapper">
             <div>
                 <h3 class="knapperh3">Vælg kassetype</h3>
-                <button>
+                <button onclick="location.href='yasai-kassen.html';" >
                     <p>Ugens menu</p>
                 </button>
-                <button id="activebtn">
+                <button onclick="location.href='byg-selv.html';" id="activebtn">
                     <p>Byg selv</p>
                 </button>
             </div>
@@ -105,7 +107,10 @@
                 </button>
             </div>
         </div>
+        <!-- valgmulighedsknapper slut -->
 
+
+        <!-- byg selv info -->
         <ol id="byg-selv-list">
             <li>Byg din egen måltidskasse ved at vælge dine foretrukne retter fra vores udvalg.</li>
             <li>Tilpas antal dage og personer, så det passer til dine behov.</li>
@@ -113,12 +118,13 @@
             <li>Gennemfør bestillingen ved at trykke på "bestil" og se dine valgte retter i kurven.</li>
         </ol>
 
+        <!-- måltidskasser start -->
         <div class="maltidskasser-boks">
             <h2 id="ugens">Ugens udvalg</h2>
-
+            
+            <!-- vegetarkassen -->
             <div class="maltidskasser">
                 <h3>Yasai kassen</h3>
-
                 
                 <div class="kasser">
                     <p class="kasser-pil">&larr;</p>
@@ -153,9 +159,9 @@
                 
             </div>
 
+            <!-- hav kassen -->
             <div class="maltidskasser">
                 <h3>Umi kassen</h3>
-                
                 
                 <div class="kasser">
                     <p class="kasser-pil">&larr;</p>
@@ -190,9 +196,9 @@
                 
             </div>
 
+            <!-- kød kassen -->
             <div class="maltidskasser">
                 <h3>Kiso kassen</h3>
-
                 
                 <div class="kasser">
                     <p class="kasser-pil">&larr;</p>
@@ -226,10 +232,13 @@
                 </div>
                 
             </div>
+            <!-- måltidskasser start -->
 
+
+            <!-- pris + bestil -->
             <div class="knapperbund">
                 <p class="pris">Samplet pris 450 DKK</p>
-                <button class="bestil">Bestil her</button>
+                <button onclick="location.href='din-kurv.html';" class="bestil-knap">Bestil her</button>
             </div>
             
         </div>
