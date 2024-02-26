@@ -12,11 +12,19 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3 {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1, h2 {
     font-family: "headerFont";
     font-weight: 250;
     color: var(--dark-blue);
     letter-spacing: 2px;
+    text-align: center;
 }
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
@@ -195,39 +203,117 @@ nav {
 /*************************************************************************************************************************************/
 
 /* Velkommen start */
-main h2, main .h1f {
+.velkommen {
     display: flex;
     justify-content: center;
+    font-size: 150px;
 }
 
-main p {
+main .pv {
+    text-align: center;
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.4375rem;
+}
+/* Velkommen slut */
+
+/* Vores måltidskasser start */
+.h1f {
     display: flex;
     justify-content: center;
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
 }
 
 .solid {
     display: flex;
-    justify-content: center;
-    width: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--light-blue);
+}
+
+.mks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .kasse {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 269px;
+    height: 313px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--beige);
 }
 
-.kasse img {
-    width: 90%;
+.kasse .kas {
+    width: 205px;
+    height: 148px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.ikon {
+    margin-right: -11rem;
+    margin-top: -2rem;
+    width: 3.6875rem;
+    height: 3.6875rem;
+    z-index: 3;
+}
+
+.h3k {
+    text-align: center;
+    color: var(--dark-blue);
+    width: 269px;
+    height: 41px;
 }
 
 .bestil {
     width: 10%;
     height: 10%;
 }
+/* Vores måltidskasser slut */
 
+/* Vidste du start */
+.nobg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);   
+} 
+
+.nobg h2 {
+    text-align: center;
+    font-size: 120px;
+}
+
+.nobg p {
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 3.125rem; /* 192.308% */
+}
+/* Vidste du slut */
+
+/* Sådan fungerer det start */
 .kant {
     display: flex;
     width: 70%;  
@@ -238,6 +324,8 @@ main p {
     flex-direction: row;
     width: 25%;
 }
+
+/* Sådan fungerer det slut */
 
 /*************************************************************************************************************************************/
 /*********************************************************** YASAI KASSEN ************************************************************/
@@ -254,9 +342,9 @@ main p {
 /*************************************************************************************************************************************/
 
 .undersideh1 {
-    font-size: 4rem;
-    line-height: 160px;
-    margin: 2rem;
+    font-size: 6rem;
+    line-height: 10rem;
+    margin: 3rem;
 }
 
 .infographic {
@@ -264,26 +352,163 @@ main p {
     justify-content: center;
     border-radius: 10px;
     border: 3px solid #024158;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 6rem;
+    margin-right: 6rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    height: 148rem;
 }
 
 .spisepinde {
     width: 850px;
-    
+    position: absolute;
+}
+
+.computer {
+    width: 20rem;
+    margin-bottom: -2rem;
+}
+
+.besog-nippon{
+    position: absolute;
+    margin-top: 18rem;
+    margin-right: 45rem;
+    text-align: center;
 }
 
 
 
+.retter {
+    width: 20rem;
+}
+
+.vaelg-maaltidskasse {
+    position: absolute;
+    margin-top: 37rem;
+    margin-left: 45rem;
+    text-align: center;
+}
+
+
+.ur{
+    width: 18rem;
+    margin-bottom: -2.5rem;
+}
+
+.levering {
+    position: absolute;
+    margin-top: 55rem;
+    margin-right: 35rem;   
+    text-align: center;
+}
+
+.dor {
+    width: 18rem;
+}
+
+.levering-dor{
+    position: absolute;
+    margin-top: 70rem;
+    margin-left: 35rem;
+    text-align: center;
+}
+
+.pan {
+    width: 18rem;
+}
+
+.madlavning {
+    position: absolute;
+    margin-top: 92rem;
+    margin-right: 38rem;
+    text-align: center;
+}
+
+
+.mad {
+    width: 18rem;
+    margin-bottom: -2rem;
+}
+
+.maaltid{
+    position: absolute;
+    margin-top: 108rem;
+    margin-left: 33rem;
+    text-align: center;
+}
+
+.skraldespande {
+    width: 18rem;
+    margin-bottom: -2.5rem;
+}
+
+.genbrug {
+    position: absolute;
+    margin-top: 125rem;
+    margin-right: 37rem;
+    text-align: center;
+}
 
 
 /*************************************************************************************************************************************/
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
+.faq-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-question {
+    background-color: #CEDFE3;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #024158;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px;
+  }
+  
+  .faq-pil {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
 
+  .faq-pil h2 {
+    justify-self: center;
+  }
+
+  /* Styler "arrow", der indikerer, at det er klikbart */
+  .arrow {
+    font-size: 18px;
+  }
+
+  /* Styler boksen i baggrunden */
+  .baggrundsboks {
+    background-color: #CEDFE3;
+    border: 3px solid #024158;
+    border-radius: 0.6rem;
+    width: 72rem;
+    height: 88rem;
+
+  }
+
+  /* Styler tekst nederst på siden */
+  h3 {
+    font-size: 2rem;
+    color: #024158;
+  }
+  
 /*************************************************************************************************************************************/
 /************************************************************* DIN KURV **************************************************************/
 /*************************************************************************************************************************************/
