@@ -351,20 +351,20 @@ main .pv {
     margin-bottom: 7.5rem;
 }
 
-#maltidknapper {
+.maltidknapper {
     display: flex;
     margin-bottom: 7.5rem;
     gap: 68px;
 }
 
-#maltidknapper div {
+.maltidknapper div {
     width: 14.5rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#maltidknapper button {
+.maltidknapper button {
     width: 231px;
     height: 63px;
     background-color: var(--red);
@@ -380,7 +380,9 @@ main .pv {
 }
 
 .knap1 {
-    width: 80%;
+    width: 60%;
+    text-align: left;
+    margin-left: 20%;
 }
 
 .knap2 {
@@ -393,7 +395,7 @@ main .pv {
     font-weight: 400;
 }
 
-#yasai-list {
+#byg-selv-list {
     border: 3px solid var(--dark-blue);
     border-radius: 10px;
     padding: 55px;
@@ -401,7 +403,7 @@ main .pv {
 }
 
 
-#yasai-list li {
+#byg-selv-list li {
     color: var(--dark-blue);
     font-size: 24px;
     font-weight: 400;
@@ -422,7 +424,7 @@ main .pv {
 }
 
 #ugens {
-    margin: 98px 0 50px;
+    margin: 98px 0 30px;
     font-size: 5rem;
 }
 
@@ -503,7 +505,7 @@ main .pv {
 .knapperbund {
     display: flex;
     justify-content: space-between;
-    margin: 130px 60px 60px 60px;
+    margin: 100px 60px 60px 60px;
 }
 
 .pris {
@@ -529,6 +531,12 @@ main .pv {
     font-weight: 700;
 }
 
+#activebtn {
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    color: var(--red);
+}
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
