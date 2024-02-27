@@ -149,19 +149,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
 
-  function toggleAnswer(id) {
-    var answer = document.getElementById('answer' + id);
-    var question = document.getElementById('question' + id);
-  
-    if (answer.style.display === 'block') {
+function toggleAnswer(id) {
+  var answer = document.getElementById('answer' + id);
+  var question = document.getElementById('question' + id);
+
+  if (answer.style.display === 'block') {
       answer.style.display = 'none';
       question.style.backgroundColor = '#CEDFE3'; // Skift tilbage til den oprindelige farve
-    } else {
+      question.style.fontWeight = 'normal'; // Gør skriften normal (ikke fed)
+  } else {
       answer.style.display = 'block';
       question.style.backgroundColor = '#FFF9F2'; // Ændr farven til en ny farve
-    }
+      question.style.fontWeight = 'bold'; // Gør skriften fed
   }
-  
+}
+
 
 
 

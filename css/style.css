@@ -210,12 +210,14 @@ nav {
 
 /* Velkommen start */
 .velkommen {
+    margin: 7rem 0 4rem 0;
     display: flex;
     justify-content: center;
-    font-size: 150px;
+    font-size: 160px;
 }
 
 main .pv {
+    margin: 0 0 4rem 0;
     text-align: center;
     color: var(--dark-blue);
     text-align: center;
@@ -236,14 +238,14 @@ main .pv {
     color: var(--dark-blue);
     font-weight: 250;
     font-size: 50px;
-    margin: 0;
+    margin: 2rem 0 -4rem 0;
 }
 
 .solid {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
     width: 1148px;
     height: 656px;
     border-radius: 10px;
@@ -256,7 +258,7 @@ main .pv {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* margin: 0 6.44rem 0 6.44rem; */
+    margin: 0;
 }
 
 .kasse {
@@ -306,18 +308,19 @@ main .pv {
 }
 /* FORSIDE Vores måltidskasser slut */
 
-/* FORSIDE Vidste du start */
+/* FORSIDE Vidste du at... start */
 .nobg {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 1148px;
-    height: 656px; 
+    height: 33rem;
 } 
 
 .nobg h2 {
     text-align: center;
     font-size: 120px;
+    margin: 0 0 1.56rem 0;
 }
 
 .nobg p {
@@ -325,8 +328,9 @@ main .pv {
     font-size: 1.625rem;
     line-height: 3.125rem;
     color: var(--dark-blue);
+    margin: 0;
 }
-/* FORSIDE Vidste du slut */
+/* FORSIDE Vidste du at... slut */
 
 /* FORSIDE Sådan fungerer det start */
 .kant h2 {
@@ -335,6 +339,7 @@ main .pv {
     color: var(--dark-blue);
     font-weight: 250;
     font-size: 50px;
+    margin: 0 0 4rem 0;
 }
 
 .kant {
@@ -391,7 +396,7 @@ main .pv {
     letter-spacing: 2px;
     color: var(--dark-blue);
     font-weight: 250;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .faqa {
@@ -423,6 +428,8 @@ main .pv {
 }
 
 .faqa .sporgsmal .svar {
+    display: flex;
+    align-items: center;
     margin: 1rem;
     font-size: 1.25rem;
     width: 40.1875rem;
@@ -434,9 +441,20 @@ main .pv {
 /* FORSIDE FAQ slut */
 
 /* FORSIDE Anmeldelser + Bæredygtighed start */
+.ae {
+    display: inline-block;
+    letter-spacing: -6px;
+    margin: 0 6px 0 3px;
+}
 .kanta {
     display: flex;
     flex-direction: row;
+}
+
+.kantak h2 {
+    font-size: 60px;
+    margin-bottom: 1.94rem;
+    z-index: 2; 
 }
 
 .kantak {
@@ -448,6 +466,7 @@ main .pv {
     height: 21.875rem;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
+    margin: 2.5rem;
 }
 
 .kantak p {
@@ -458,10 +477,39 @@ main .pv {
 .kantak .genbrugf {
     width: 11.375rem;
     height: 11.375rem;
+    margin: -4rem 0 -1rem 0;
+    z-index: 3;
 }
 /* FORSIDE Anmeldelser + Bæredygtighed slut */
 
 /* FORSIDE Tilmeld dig her start */
+.solidt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1148px;
+    height: 656px;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    background: var(--light-blue);
+    margin: 8rem 0 6.19rem 0;
+}
+
+.solidt h2 {
+    font-size: 90px;    
+}
+
+.tilmeldk {
+    width: 17.25rem;
+    height: 5rem;
+    border-radius: 0.625rem;
+    font-size: 2.25rem;
+    color: var(--beige);
+    background-color: var(--dark-blue);
+    margin: 3.75rem;
+}
+
 .tilmeldkasse {
     display: flex;
     flex-direction: row;
@@ -469,7 +517,7 @@ main .pv {
     align-items: center;
 }
 
-.solid input {
+.solidt input {
     color: var(--dark-blue);
     width: 23.3125rem;
     height: 4.25rem;
@@ -477,6 +525,7 @@ main .pv {
     border: 2px solid var(--dark-blue);
     background: var(--beige);
     padding: 1.81rem;
+    margin: 2.25rem 0 0 0;
 }
 
     /* Gør at placeholdertekst i input feltet er mørke blå */
@@ -492,7 +541,6 @@ main .pv {
 
 .inputborder {
     display: flex;
-    padding: 2rem;
     width: 27.5625rem;
     height: 25rem;
     border-radius: 0.625rem;
@@ -502,9 +550,10 @@ main .pv {
     margin: 2rem;
 }
 
-.solid .kassef {
+.solidt .kassef {
     width: 25.125rem;
     height: 21.5625rem;
+    margin: 1rem 0 0 1rem;
 }
 /* FORSIDE Tilmeld dig her slut */
 
@@ -751,11 +800,15 @@ main .pv {
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
 
+/* styler overskriften */
+
 .undersideh1 {
     font-size: 6rem;
     line-height: 10rem;
     margin: 3rem;
 }
+
+/* styler teksten */
 
 .info-sadan-fungerer-det {
     display: flex;
@@ -770,6 +823,8 @@ main .pv {
     margin-bottom: 1rem;
 }
 
+/* styler sektionen, og den boks der er omkring */
+
 .infographic {
     display: flex;
     justify-content: center;
@@ -783,7 +838,7 @@ main .pv {
     width: 80%;
 }
 
-/* Animation for the visible class */
+/* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
 .infographic > section {
     opacity: 0;
     transform: translateY(20px);
@@ -794,6 +849,8 @@ main .pv {
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* styler indholdet i infographic */
 
 .spisepinde {
     width: 850px;
@@ -812,8 +869,6 @@ main .pv {
     text-align: center;
 }
 
-
-
 .retter {
     width: 20rem;
 }
@@ -824,7 +879,6 @@ main .pv {
     margin-left: 45rem;
     text-align: center;
 }
-
 
 .ur{
     width: 18rem;
@@ -860,7 +914,6 @@ main .pv {
     text-align: center;
 }
 
-
 .mad {
     width: 18rem;
     margin-bottom: -2rem;
@@ -884,6 +937,8 @@ main .pv {
     margin-right: 37rem;
     text-align: center;
 }
+
+/* styler teksten */
 
 .tekst-infographic {
     font-weight: 300;
@@ -959,6 +1014,20 @@ main .pv {
     font-weight: lighter;
     color: #024158;
     width: 95%;
+  }
+
+  /* Styler svar i boksene */
+  .faq-answer{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #024158;
+  }
+
+  /* Styler links i svar til spørgsmål */
+  .link-faq {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
   }
 
   /* Styler tekst nederst på siden */
@@ -1118,10 +1187,166 @@ main .pv {
 /***************************************************************** UPS ***************************************************************/
 /*************************************************************************************************************************************/
 
+/* Jeg styler først overskriften på siden og undertitlen*/
+
+.ups-titel {
+    font-size:6rem;
+    margin: 1rem;
+}
+
+.ups-undertitel {
+    font-size: 35px;
+    color: #024158;
+    font-weight: 200;
+    margin: 1rem;
+}
+
+/* jeg styler boksen omkring min sektion */
+
+.ups {
+    height: 50rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 35rem;
+    margin: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+/* jeg styler teksten i sektionen */
+
+.ups p {
+    color: #024158;
+    font-size: 20px;
+    padding: 0.5rem;
+    font-weight: 200;
+}
+
+/* jeg styler billederne i sektionen */
+
+.ups-kasse {
+    width: 10rem;
+    margin: 2rem;
+}
+
+.ups-miniinfo {
+    width: 34.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* jeg styler links */
+
+.ups a {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+}
+
+.ups a:hover {
+    color: #D33D34;
+}
+
+/* jeg styler knappen */
+
+.ups button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    background-color: var(--dark-blue);
+    margin: 2rem;    
+    margin-top: 3.5rem;
+}
+
+.ups button a {
+    font-size: 1.5rem;
+    color: var(--beige);
+    font-weight: 500;
+}
+
+
 /*************************************************************************************************************************************/
 /********************************************************** SUCCES/ANNULLERET ********************************************************/
 /*************************************************************************************************************************************/
 
+
+/* Styler boksen omkring sektionen  */
+
+.succes {
+    height: 35rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 30rem;
+    text-align: center;
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+/* styler indholdet i boksen */
+
+.succes-titel {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.succes-ikon {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* styler links */
+
+.succes p {
+    color: #024158;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+/* Jeg styler nu vores annulleret side */
+
+.annulleret {
+    height: 35rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 30rem;
+    text-align: center;
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+/* styler indholdet i sektionen */
+
+.annulleret-titel {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.annulleret-ikon {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.annulleret p {
+    color: #024158;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+/* styler links */
+
+.link-annulleret {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+}
+
+.link-annulleret:hover {
+    color: #D33D34;
+}
 
 /*************************************************************************************************************************************/
 /*************************************************************** FOOTER **************************************************************/
