@@ -32,8 +32,8 @@
                 <button onclick="dropdown1()" class="dropbtn drop1">Måltidskasser</button>
                 <div id="myDropdown1" class="dropdown-content content1">
                     <a href="yasai-kassen.html">Yasai<br>(Vegetar-kassen)</a>
-                    <a href="#">Kiso<br>(Basis-kassen)</a>
-                    <a href="#">Umi<br>(Hav-kassen)</a>
+                    <a href="ups.html">Kiso<br>(Basis-kassen)</a>
+                    <a href="ups.html">Umi<br>(Hav-kassen)</a>
                     <a href="byg-selv.html">Byg Selv</a>
                 </div>
             </div>
@@ -43,24 +43,24 @@
                 <div id="myDropdown2" class="dropdown-content content2">
                     <a href="sadan-fungerer-det.html">Sådan fungerer det</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="#">Bæredygtighed</a>
-                    <a href="#">Anmeldelser</a>
+                    <a href="ups.html">Bæredygtighed</a>
+                    <a href="ups.html">Anmeldelser</a>
                 </div>
             </div>
     
             <div class="dropdown">
                 <button onclick="dropdown3()" class="dropbtn drop3">Din Konto</button>
                 <div id="myDropdown3" class="dropdown-content content3">
-                    <a href="#">Min måltidskasse</a>
-                    <a href="#">Mine favoritter</a>
-                    <a href="#">Tidligere måltidskasser</a>
+                    <a href="ups.html">Min måltidskasse</a>
+                    <a href="ups.html">Mine favoritter</a>
+                    <a href="ups.html">Tidligere måltidskasser</a>
                 </div>
             </div>
         </nav>
         <!-- navigationsbar slut -->
 
         <div class="knapper">
-            <button id="login">Log ind</button>
+            <button onclick="location.href='tilmeld-dig.html';" id="login">Log ind</button>
             <div id="nav-hjerte">
                 <img class="red" src="img/ikoner/hjerte-tomt.png" alt="Farvoritter">
                 <img class="blue" src="img/ikoner/hjerte-bla.webp" alt="Farvoritter">
@@ -85,13 +85,13 @@
 <section class="baggrundsboks">
 
     <div class="faq-container">
+      
+      <!-- Spørgsmål 1 -->
     
-        <!-- Spørgsmål 1 -->
-
             <div class="faq-question" id="question1" onclick="toggleAnswer(1)">
               <div class="faq-pil">
-                <h3 class="h3-faq">Hvordan bestiller jeg en måltidskasse?</h3>
-                <span class="arrow">&darr;</span>
+                <h3 id="faq1" class="h3-faq">Hvordan bestiller jeg en måltidskasse?</h3>
+                <span id="pil1" class="arrow">&darr;</span>
               </div>
               
             <!-- Tilføjer svar til spørgsmål -->
@@ -99,28 +99,37 @@
                 <p>
                     Du har mulighed for at vælge mellem vores tre planlagte kasser 
                     og du kan tilpasse og ændre din kasse lige så tosset du vil.
-                    <br>
-                    <br>
+                  </p>
+                  
+                  <p>
                     Læs mere om vores kasser Umi, Kiso og Yasai 
                     <a class="link-faq" href="yasai-kassen.html">her</a>, eller 
                     byg din egen måltidskasse <a class="link-faq" href="byg-selv.html">her</a>. 
                 </p>
               </div>
 
-            </div>
+            </div> 
         
         <!-- Spørgsmål 2 -->
         
         <div class="faq-question" id="question2" onclick="toggleAnswer(2)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvordan opsiger jeg mit abonnement?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq2" class="h3-faq">Hvordan opsiger jeg mit abonnement?</h3>
+              <span id="pil2" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer2">
                 <p>
-                  Svar her. 
+                  Du kan opsige dit abonnement ved at logge ind på din profil og 
+                  gå til "Abonnement", hvor du finder muligheden for at 
+                  opsige dit abonnement. 
+                </p>
+
+                <p>
+                  Alternativt kan du kontakte vores kundeservice for hjælp på 
+                  mail: <strong>Nippon-info@gmail.com</strong> eller 
+                  telefon: <strong>+45 37 82 46 91</strong>
                 </p>
             </div>
 
@@ -130,14 +139,23 @@
         
         <div class="faq-question" id="question3" onclick="toggleAnswer(3)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvordan ændrer jeg min måltidskasse?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq3" class="h3-faq">Hvordan ændrer jeg min måltidskasse?</h3>
+              <span id="pil3" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer3">
                 <p>
-                  Svar her. 
+                  Du kan ændrer i din måltidskasse ved at bygge din egen måltidskasse, 
+                  hvor du kan tilpasse og ændre din kasse efter dine præferencer.
+                  Du kan finde siden med byg-selv måltidskasser 
+                  <a class="link-faq" href="byg-selv.html">her</a>.
+                </p>
+
+                <p>
+                  Hvis du ønsker yderligere ændringer, kan du altid vende tilbage og
+                  ændre i din måltidskasse ved at klikke på "Rediger ordre" 
+                  under <a class="link-faq" href="din-kurv.html">din indkøbskurv</a>.
                 </p>
             </div>
 
@@ -147,14 +165,25 @@
         
         <div class="faq-question" id="question4" onclick="toggleAnswer(4)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvordan fungerer levering?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq4" class="h3-faq">Hvordan fungerer levering?</h3>
+              <span id="pil4" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer4">
                 <p>
-                  Svar her. 
+                  Vi leverer dine måltidskasser direkte til din dør, og vores 
+                  levering sker regelmæssigt i efter til din valgte leveringsplan. 
+                </p>
+
+                <p>
+                  Når du har lavet en bestillig, modtager du en bekræftelse og 
+                  sporingsoplysninger, så du nemt kan følge din levering. 
+                </p>
+
+                <p>
+                  Du kan desuden læse mere om hvordan det hele fungerer
+                  <a class="link-faq" href="sadan-fungerer-det.html">her</a>.
                 </p>
             </div>
 
@@ -164,14 +193,20 @@
         
         <div class="faq-question" id="question5" onclick="toggleAnswer(5)">
             <div class="faq-pil">
-              <h3 class="h3-faq">I hvilket tidsrum leverer i?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq5" class="h3-faq">I hvilket tidsrum leverer i?</h3>
+              <span id="pil5" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer5">
                 <p>
-                  Svar her. 
+                  Vores leveringstidspunkter varierer afhængigt af din placering. 
+                </p>
+
+                <p>
+                  Vi stræber efter at levere på et tidspunkt, der passer bedst til dig,
+                  og du har derfor mulighed for at vælge dit ønskede leveringstidspunkt, 
+                  når du bestiller din måltidskasse. 
                 </p>
             </div>
 
@@ -181,15 +216,22 @@
         
         <div class="faq-question" id="question6" onclick="toggleAnswer(6)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvordan tilknytter jeg et betalingskort til min profil?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq6" class="h3-faq">Hvordan tilknytter jeg et betalingskort til min profil?</h3>
+              <span id="pil6" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer6">
                 <p>
-                  Svar her. 
+                  Du tilknytter et betalingskort til din profil ved at logge ind og 
+                  gå til "Betalingsindstillinger" under "Din Konto", som du finder 
+                  <a class="link-faq" href="#">her</a>.
                 </p>
+
+                <p>
+                  Her kan du tilføje eller ændre dine betalingsoplysninger sikkert. 
+                </p>
+                
             </div>
 
         </div>
@@ -198,14 +240,25 @@
         
         <div class="faq-question" id="question7" onclick="toggleAnswer(7)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvordan sorterer jeg emballagen?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq7" class="h3-faq">Hvordan sorterer jeg emballagen?</h3>
+              <span id="pil7" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer7">
                 <p>
-                  Svar her. 
+                  Vi opfordrer til bæredygtighed, og vores måltidskasse gør det nemt for dig. 
+                </p>
+
+                <p>
+                  Vi stræber efter at bruge genanvendelige materialer og støtter miljøvenlige 
+                  initiativer, og du skal derfor blot sortere emballagen i overensstemmelse 
+                  med de lokale genbrugsretningslinjer. 
+                </p>
+
+                <p>
+                  Du kan læse meget mere om vores <a class="link-faq" href="#">bæredygtighed</a> 
+                  her på hjemmesiden.
                 </p>
             </div>
 
@@ -215,14 +268,21 @@
         
         <div class="faq-question" id="question8" onclick="toggleAnswer(8)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvad gør jeg, hvis jeg modtager en dårlig vare?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq8" class="h3-faq">Hvad gør jeg, hvis jeg modtager en dårlig vare?</h3>
+              <span id="pil8" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer8">
                 <p>
-                  Svar her. 
+                  Hvis du mødtager en dårlig vare, beder vi dig kontakte vores kundeservice 
+                  og send gerne billeder af den modtagne vare. Herefter undersøger vi og træffer 
+                  nødvendige foranstaltninger for at sikre din tilfredshed.
+                </p>
+
+                <p>
+                  Du kan kontakte vores kundeservice på mail: <strong>Nippon-info@gmail.com</strong> 
+                  eller telefon: <strong>+45 37 82 46 91</strong>
                 </p>
             </div>
 
@@ -232,14 +292,21 @@
         
         <div class="faq-question" id="question9" onclick="toggleAnswer(9)">
             <div class="faq-pil">
-              <h3 class="h3-faq">Hvad gør jeg, hvis der mangler en vare?</h3>
-              <span class="arrow">&darr;</span>
+              <h3 id="faq9" class="h3-faq">Hvad gør jeg, hvis der mangler en vare?</h3>
+              <span id="pil9" class="arrow">&darr;</span>
             </div>
             
           <!-- Tilføjer svar til spørgsmål -->
             <div class="faq-answer" id="answer9">
                 <p>
-                  Svar her. 
+                  I tilfælde af manglende varer, bedes du kontakte vores kundeservice. 
+                  Vi vil omgående tage hånd om sagen og sørge for at levere den manglende 
+                  vare eller tilbyde en passende løsning.
+                </p>
+
+                <p>
+                  Du kan kontakte vores kundeservice på mail: <strong>Nippon-info@gmail.com</strong> 
+                  eller telefon: <strong>+45 37 82 46 91</strong>
                 </p>
             </div>
 

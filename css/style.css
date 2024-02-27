@@ -592,7 +592,7 @@ main .pv {
     background-color: var(--red);
     border-radius: 10px;
     border: 3px solid var(--red);
-    color: #FFF9F2;
+    color: var(--beige);
     font-size: 20px;
     font-weight: 300;
     display: flex;
@@ -606,12 +606,6 @@ main .pv {
     border: 2px solid var(--red);
     background: var(--beige);
     color: var(--red);
-}
-
-#activebtn:hover {
-    border-radius: 10px;
-    background: var(--red);
-    color: var(--beige);
 }
 
 .knap1 {
@@ -629,6 +623,25 @@ main .pv {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+#knapinfo1, #knapinfo2 {
+    display: block;
+}
+
+#drop1, #drop2 {
+    display: none;
+    position: absolute;
+}
+
+#drop1 p, #drop2 p {
+    padding: 5px;
+    background: var(--beige);
+}
+
+#drop1 p:hover, #drop2:hover {
+    background: var(--red);
+    color: var(--beige);
 }
 
 /* byg selv informations liste */
@@ -655,6 +668,7 @@ main .pv {
     flex-direction: column;
     width: 90%;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     margin-bottom: 125px;
@@ -685,6 +699,7 @@ main .pv {
     margin-top: 15px;
     flex-wrap: wrap;
     gap: 60px 0;
+    max-width: 1145px;
 }
 
 .kasser-pil {
@@ -761,6 +776,7 @@ main .pv {
     display: flex;
     justify-content: space-between;
     margin: 100px 60px 60px 60px;
+    width: 90%;
 }
 
 .pris {
@@ -777,6 +793,7 @@ main .pv {
 
 .bestil-knap {
     border-radius: 10px;
+    border: none;
     background: var(--dark-blue);
     width: 276px;
     height: 80px;
@@ -786,8 +803,14 @@ main .pv {
     font-weight: 700;
 }
 
+.bestil-knap:hover {
+    border: 2px solid var(--dark-blue);
+    background: transparent;
+    color: var(--dark-blue);
+}
+
 /* ændre farven på valgmulighedskanpperne i forhold til, hvilken side man befinde sig på */
-#activebtn {
+#activebtn1, #activebtn2, #activebtn3 {
     border-radius: 10px;
     border: 2px solid var(--red);
     background: var(--beige);
@@ -962,7 +985,6 @@ main .pv {
     background-color: #CEDFE3;
     margin-bottom: 2rem;
     padding: 2rem;
-    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -988,7 +1010,7 @@ main .pv {
     justify-self: center;
   }
 
-  /* Styler "arrow", der indikerer, at det er klikbart */
+  /* Styler pilen, der indikerer, at det er klikbart */
   .arrow {
     font-size: 1.8rem;
     color: #024158;
@@ -1001,7 +1023,7 @@ main .pv {
     border: 3px solid #024158;
     border-radius: 0.6rem;
     width: 72rem;
-    height: 78rem;
+    height: auto;
 
   }
 
@@ -1018,6 +1040,11 @@ main .pv {
     font-size: 1.8rem;
     font-weight: lighter;
     color: #024158;
+    line-height: 3rem;
+  }
+
+  .faq-answer p{
+    padding-top: 2rem;
   }
 
   /* Styler links i svar til spørgsmål */
@@ -1036,13 +1063,156 @@ main .pv {
     width: 72rem;
     text-align: center;
     margin: 5rem;
-
   }
+
+  /* Styler ny class til udvidet boks, når svaret kommer frem */
+  .faq-udvidetboks {
+    height: auto;
+    display: block;
+  }
+
+  /* Styler ny class så spørgsmålet bliver fed, når svaret kommer frem */
+  .questions-fed {
+    font-weight: 700;
+    padding-top: 1.6rem;
+  }
+
   
 /*************************************************************************************************************************************/
 /************************************************************* DIN KURV **************************************************************/
 /*************************************************************************************************************************************/
 
+.kurv-boks {
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    background: var(--beige);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.kurv-boks h3 {
+    color: #024158;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 20px;
+}
+
+
+.kurvknapper {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 68px;
+}
+
+.kurvknapper div {
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kurvknapper button {
+    width: 231px;
+    height: 63px;
+    background-color: var(--beige);
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#activebtn1:hover, #activebtn2:hover, #activebtn3:hover {
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--beige);
+}
+
+.tekst-kurv {
+    margin: 50px;
+}
+
+.tekst-kurv p {
+    padding: 5px;
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tekst-kurv p:first-child {
+    font-size: 30px;
+}
+
+.ikonerbund {
+    display: flex;
+    margin-bottom: 70px;
+    gap: 30px;
+}
+
+.ikonerbund p {
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.ikonerbund img {
+    width: 72px;
+}
+
+.fortsaetknapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.forsaet1 {
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+    background-color: var(--beige);
+    width: 269px;
+    height: 88px;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.forsaet2 {
+    border-radius: 10px;
+    border: none;
+    background: var(--dark-blue);
+    width: 269px;
+    height: 88px;
+    color: var(--beige);
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.forsaet1:hover {
+    border: 2px solid var(--beige);
+    background-color: var(--dark-blue);
+    color: var(--beige);
+}
+
+.forsaet2:hover {
+    border: 2px solid var(--dark-blue);
+    background-color: var(--beige);
+    color: var(--dark-blue);
+}
 
 /*************************************************************************************************************************************/
 /************************************************************ TILMELD DIG ************************************************************/
@@ -1144,6 +1314,86 @@ h4, h5 {
 /***************************************************************** UPS ***************************************************************/
 /*************************************************************************************************************************************/
 
+/* Jeg styler først overskriften på siden og undertitlen*/
+
+.ups-titel {
+    font-size:6rem;
+    margin: 1rem;
+}
+
+.ups-undertitel {
+    font-size: 35px;
+    color: #024158;
+    font-weight: 200;
+    margin: 1rem;
+}
+
+/* jeg styler boksen omkring min sektion */
+
+.ups {
+    height: 50rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 35rem;
+    margin: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+/* jeg styler teksten i sektionen */
+
+.ups p {
+    color: #024158;
+    font-size: 20px;
+    padding: 0.5rem;
+    font-weight: 200;
+}
+
+/* jeg styler billederne i sektionen */
+
+.ups-kasse {
+    width: 10rem;
+    margin: 2rem;
+}
+
+.ups-miniinfo {
+    width: 34.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* jeg styler links */
+
+.ups a {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+}
+
+.ups a:hover {
+    color: #D33D34;
+}
+
+/* jeg styler knappen */
+
+.ups button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    background-color: var(--dark-blue);
+    margin: 2rem;    
+    margin-top: 3.5rem;
+}
+
+.ups button a {
+    font-size: 1.5rem;
+    color: var(--beige);
+    font-weight: 500;
+}
+
+
 /*************************************************************************************************************************************/
 /********************************************************** SUCCES/ANNULLERET ********************************************************/
 /*************************************************************************************************************************************/
@@ -1219,6 +1469,10 @@ h4, h5 {
     text-decoration: none;
     color: #024158;
     font-weight: bold;
+}
+
+.link-annulleret:hover {
+    color: #D33D34;
 }
 
 /*************************************************************************************************************************************/
