@@ -796,11 +796,15 @@ main .pv {
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
 
+/* styler overskriften */
+
 .undersideh1 {
     font-size: 6rem;
     line-height: 10rem;
     margin: 3rem;
 }
+
+/* styler teksten */
 
 .info-sadan-fungerer-det {
     display: flex;
@@ -815,6 +819,8 @@ main .pv {
     margin-bottom: 1rem;
 }
 
+/* styler sektionen, og den boks der er omkring */
+
 .infographic {
     display: flex;
     justify-content: center;
@@ -828,7 +834,7 @@ main .pv {
     width: 80%;
 }
 
-/* Animation for the visible class */
+/* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
 .infographic > section {
     opacity: 0;
     transform: translateY(20px);
@@ -839,6 +845,8 @@ main .pv {
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* styler indholdet i infographic */
 
 .spisepinde {
     width: 850px;
@@ -857,8 +865,6 @@ main .pv {
     text-align: center;
 }
 
-
-
 .retter {
     width: 20rem;
 }
@@ -869,7 +875,6 @@ main .pv {
     margin-left: 45rem;
     text-align: center;
 }
-
 
 .ur{
     width: 18rem;
@@ -905,7 +910,6 @@ main .pv {
     text-align: center;
 }
 
-
 .mad {
     width: 18rem;
     margin-bottom: -2rem;
@@ -929,6 +933,8 @@ main .pv {
     margin-right: 37rem;
     text-align: center;
 }
+
+/* styler teksten */
 
 .tekst-infographic {
     font-weight: 300;
@@ -1006,6 +1012,20 @@ main .pv {
     width: 95%;
   }
 
+  /* Styler svar i boksene */
+  .faq-answer{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #024158;
+  }
+
+  /* Styler links i svar til spørgsmål */
+  .link-faq {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+  }
+
   /* Styler tekst nederst på siden */
   .h4-faq {
     font-size: 1.8rem;
@@ -1036,6 +1056,78 @@ main .pv {
 /********************************************************** SUCCES/ANNULLERET ********************************************************/
 /*************************************************************************************************************************************/
 
+
+/* Styler boksen omkring sektionen  */
+
+.succes {
+    height: 35rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 30rem;
+    text-align: center;
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+/* styler indholdet i boksen */
+
+.succes-titel {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.succes-ikon {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* styler links */
+
+.succes p {
+    color: #024158;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+/* Jeg styler nu vores annulleret side */
+
+.annulleret {
+    height: 35rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 30rem;
+    text-align: center;
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+/* styler indholdet i sektionen */
+
+.annulleret-titel {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.annulleret-ikon {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.annulleret p {
+    color: #024158;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+/* styler links */
+
+.link-annulleret {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+}
 
 /*************************************************************************************************************************************/
 /*************************************************************** FOOTER **************************************************************/
