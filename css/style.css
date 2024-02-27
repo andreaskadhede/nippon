@@ -859,10 +859,11 @@ input[type="text"] {
     font-size: 1.5rem;
     font-weight: 200;
     color: #024158;
-    width: 100%;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    margin-bottom: 1rem;
+    width: 52rem;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+    
+
 }
 
 /* styler sektionen, og den boks der er omkring */
