@@ -1055,12 +1055,12 @@ main .pv {
 /* Jeg styler først overskriften på siden og undertitlen*/
 
 .ups-titel {
-    font-size:7rem;
-    margin-bottom:0;
+    font-size:6rem;
+    margin: 1rem;
 }
 
 .ups-undertitel {
-    font-size: 40px;
+    font-size: 35px;
     color: #024158;
     font-weight: 200;
     margin: 1rem;
@@ -1073,10 +1073,11 @@ main .pv {
     border-radius: 0.625rem;
     border: 3px solid #D33D34;
     background: #FFF9F2;
-    width: 40rem;
-    margin: 5rem;
+    width: 35rem;
+    margin: 2rem;
     padding-top: 2rem;
     text-align: center;
+    margin-bottom: 6rem;
 }
 
 /* jeg styler teksten i sektionen */
@@ -1093,6 +1094,12 @@ main .pv {
 .ups-kasse {
     width: 10rem;
     margin: 2rem;
+}
+
+.ups-miniinfo {
+    width: 34.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* jeg styler links */
@@ -1113,10 +1120,8 @@ main .pv {
     color: var(--beige);
     background-color: var(--dark-blue);
     margin: 2rem;    
+    margin-top: 3.5rem;
 }
-
-
-
 
 
 
