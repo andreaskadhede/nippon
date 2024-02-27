@@ -128,7 +128,6 @@ nav {
     color: var(--red);
     font-size: 20px;
     font-weight: 400;
-    text-wrap: wrap;
     padding: 0 0 10px;
 }
 
@@ -1225,7 +1224,6 @@ input[type="text"] {
     width: 269px;
     height: 88px;
     color: var(--beige);
-    text-wrap: wrap;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
