@@ -1112,7 +1112,7 @@ input[type="text"] {
     margin: 50px 0 20px;
 }
 
-
+/* information i toppen af kurven */
 .kurvknapper {
     display: flex;
     margin-bottom: 2rem;
@@ -1147,6 +1147,7 @@ input[type="text"] {
     color: var(--beige);
 }
 
+/* pris */
 .tekst-kurv {
     margin: 50px;
 }
@@ -1162,6 +1163,7 @@ input[type="text"] {
     font-size: 30px;
 }
 
+/* ændre/annuller ordre ikoner */
 .ikonerbund {
     display: flex;
     margin-bottom: 70px;
@@ -1178,6 +1180,8 @@ input[type="text"] {
     width: 72px;
 }
 
+
+/* fortsæt knapper */
 .fortsaetknapper {
     display: flex;
     gap: 50px;
