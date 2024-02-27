@@ -1003,6 +1003,74 @@ main .pv {
 /***************************************************************** UPS ***************************************************************/
 /*************************************************************************************************************************************/
 
+/* Jeg styler først overskriften på siden og undertitlen*/
+
+.ups-titel {
+    font-size:7rem;
+    margin-bottom:0;
+}
+
+.ups-undertitel {
+    font-size: 40px;
+    color: #024158;
+    font-weight: 200;
+    margin: 1rem;
+}
+
+/* jeg styler boksen omkring min sektion */
+
+.ups {
+    height: 50rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 40rem;
+    margin: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* jeg styler teksten i sektionen */
+
+.ups p {
+    color: #024158;
+    font-size: 20px;
+    padding: 0.5rem;
+    font-weight: 200;
+}
+
+/* jeg styler billederne i sektionen */
+
+.ups-kasse {
+    width: 10rem;
+    margin: 2rem;
+}
+
+/* jeg styler links */
+
+.ups a {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+}
+
+/* jeg styler knappen */
+
+.ups button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    font-size: 1.5rem;
+    color: var(--beige);
+    background-color: var(--dark-blue);
+    margin: 2rem;    
+}
+
+
+
+
+
+
 /*************************************************************************************************************************************/
 /********************************************************** SUCCES/ANNULLERET ********************************************************/
 /*************************************************************************************************************************************/
