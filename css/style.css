@@ -290,10 +290,10 @@ nav {
 }
 
 .bestil {
-    width: 17.25rem;
-    height: 5rem;
+    width: 17rem;
+    height: 4.5rem;
     border-radius: 0.625rem;
-    font-size: 2.20rem;
+    font-size: 2rem;
     color: var(--beige);
     background-color: var(--dark-blue);
     border: none;
@@ -1252,6 +1252,8 @@ input[type="text"] {
 #tilmeld {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
 #tilmeld h4 {
@@ -1263,42 +1265,39 @@ input[type="text"] {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 71.75rem;
-    height: 34.25rem;
+    width: 100%;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
-    padding: 4rem;  
+    padding: 3rem;  
     margin: 0 0 4.50rem 0;
 }
 
 .meld {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 }
 
 h4, h5 {
     color: var(--dark-blue);
-    font-size: 48px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .kanttil h5, .kanttilrod h5 {
-    margin-top: 3.56rem;
-    margin-bottom: 2.38rem;
+    margin-bottom: 2rem;
 }
 
 .kanttil input {    
     color: var(--dark-blue);
-    width: 64.5rem;
-    height: 6.6875rem;
+    width: 50rem;
     border-radius: 6.25rem;
     border: 2px solid var(--dark-blue);
     background: var(--beige);
-    padding: 1.81rem;
-    margin:1rem;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 /* TILMELD DIG Er du allerede tilmeldt? slut */
 
@@ -1308,32 +1307,27 @@ h4, h5 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 71.75rem;
-    height: 34.25rem;
+    width: 100%;
     border-radius: 10px;
-    border: 3px solid var(--red);
-    padding: 4rem;  
-    margin: 0 0 4.50rem 0;    
+    border: 3px solid var(--red);    padding: 3rem;  
+    margin: 0 0 4.50rem 0;
 }
 
 .kanttilrod input {    
     color: var(--red);
-    width: 64.5rem;
-    height: 6.6875rem;
     border-radius: 6.25rem;
     border: 2px solid var(--red);
     background: var(--beige);
-    padding: 1.81rem;
-    margin:1rem;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
     /* Opret dig button */
 .opret {
-    width: 17.25rem;
-    height: 5rem;
-    margin-bottom: 3.69rem;
+    width: 17rem;
+    height: 4.5rem;
     border-radius: 0.625rem;
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: var(--beige);
     background-color: var(--red); 
     border: none;
