@@ -1327,7 +1327,7 @@ h4, h5 {
 }
 
     /* Opret dig button */
-.kanttilrod .opret {
+.opret {
     width: 17.25rem;
     height: 5rem;
     margin-bottom: 3.69rem;
@@ -1335,6 +1335,13 @@ h4, h5 {
     font-size: 2.25rem;
     color: var(--beige);
     background-color: var(--red); 
+    border: none;
+}
+
+.opret:hover {
+    color: var(--red);
+    background-color: var(--beige);
+    border: 2px solid var(--red);
 }
 /* TILMELD DIG Er du ny hos os? slut */
 
