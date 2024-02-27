@@ -887,8 +887,8 @@ input[type="text"] {
     margin-right: 6rem;
     margin-top: 4rem;
     margin-bottom: 6rem;
-    height: 148rem;
-    width: 80%;
+    height: 111.5rem;
+    width: 52rem;
 }
 
 /* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
@@ -906,88 +906,88 @@ input[type="text"] {
   /* styler indholdet i infographic */
 
 .spisepinde {
-    width: 850px;
+    width: 40rem;
     position: absolute;
 }
 
 .computer {
-    width: 20rem;
+    width: 15rem;
     margin-bottom: -2rem;
 }
 
 .besog-nippon{
     position: absolute;
-    margin-top: 18rem;
-    margin-right: 45rem;
+    margin-top: 13rem;
+    margin-right: 35rem;
     text-align: center;
 }
 
 .retter {
-    width: 20rem;
+    width: 15rem;
 }
 
 .vaelg-maaltidskasse {
     position: absolute;
-    margin-top: 37rem;
-    margin-left: 45rem;
+    margin-top: 27rem;
+    margin-left: 35rem;
     text-align: center;
 }
 
 .ur{
-    width: 18rem;
+    width: 15rem;
     margin-bottom: -2.5rem;
 }
 
 .levering {
     position: absolute;
-    margin-top: 55rem;
-    margin-right: 35rem;   
+    margin-top: 40rem;
+    margin-right: 28rem;   
     text-align: center;
 }
 
 .dor {
-    width: 18rem;
+    width: 15rem;
 }
 
 .levering-dor{
     position: absolute;
-    margin-top: 70rem;
-    margin-left: 35rem;
+    margin-top: 52rem;
+    margin-left: 28rem;
     text-align: center;
 }
 
 .pan {
-    width: 18rem;
+    width: 15rem;
 }
 
 .madlavning {
     position: absolute;
-    margin-top: 92rem;
-    margin-right: 38rem;
+    margin-top:70rem;
+    margin-right: 30rem;
     text-align: center;
 }
 
 .mad {
-    width: 18rem;
+    width: 15rem;
     margin-bottom: -2rem;
 }
 
 .maaltid{
     position: absolute;
-    margin-top: 108rem;
-    margin-left: 33rem;
+    margin-top: 80rem;
+    margin-left: 27rem;
     text-align: center;
 }
 
 .skraldespande {
-    width: 18rem;
+    width: 15rem;
     margin-bottom: -2.5rem;
 }
 
 .genbrug {
     position: absolute;
-    margin-top: 125rem;
-    margin-right: 37rem;
+    margin-top: 95rem;
+    margin-right: 28rem;
     text-align: center;
 }
 
@@ -995,7 +995,7 @@ input[type="text"] {
 
 .tekst-infographic {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     color: #024158;
 }
 
