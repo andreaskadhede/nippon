@@ -32,8 +32,8 @@
                 <button onclick="dropdown1()" class="dropbtn drop1">Måltidskasser</button>
                 <div id="myDropdown1" class="dropdown-content content1">
                     <a href="yasai-kassen.html">Yasai<br>(Vegetar-kassen)</a>
-                    <a href="#">Kiso<br>(Basis-kassen)</a>
-                    <a href="#">Umi<br>(Hav-kassen)</a>
+                    <a href="ups.html">Kiso<br>(Basis-kassen)</a>
+                    <a href="ups.html">Umi<br>(Hav-kassen)</a>
                     <a href="byg-selv.html">Byg Selv</a>
                 </div>
             </div>
@@ -43,24 +43,24 @@
                 <div id="myDropdown2" class="dropdown-content content2">
                     <a href="sadan-fungerer-det.html">Sådan fungerer det</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="#">Bæredygtighed</a>
-                    <a href="#">Anmeldelser</a>
+                    <a href="ups.html">Bæredygtighed</a>
+                    <a href="ups.html">Anmeldelser</a>
                 </div>
             </div>
     
             <div class="dropdown">
                 <button onclick="dropdown3()" class="dropbtn drop3">Din Konto</button>
                 <div id="myDropdown3" class="dropdown-content content3">
-                    <a href="#">Min måltidskasse</a>
-                    <a href="#">Mine favoritter</a>
-                    <a href="#">Tidligere måltidskasser</a>
+                    <a href="ups.html">Min måltidskasse</a>
+                    <a href="ups.html">Mine favoritter</a>
+                    <a href="ups.html">Tidligere måltidskasser</a>
                 </div>
             </div>
         </nav>
         <!-- navigationsbar slut -->
 
         <div class="knapper">
-            <button id="login">Log ind</button>
+            <button onclick="location.href='tilmeld-dig.html';" id="login">Log ind</button>
             <div id="nav-hjerte">
                 <img class="red" src="img/ikoner/hjerte-tomt.png" alt="Farvoritter">
                 <img class="blue" src="img/ikoner/hjerte-bla.webp" alt="Farvoritter">
@@ -76,6 +76,84 @@
 
     <!-- main start -->
     <main>
+        <h1>Din kurv</h1>
+
+        <div class="kurv-boks">
+            <h3>Din valgte måltidskasse</h3>
+            <div class="kurvknapper">
+                <div>
+                    <h4 class="knapperh3">Kassetype</h4>
+                    <button class="activebtn">Byg selv</button>
+                </div>
+                <div>
+                    <h4 class="knapperh3">Tilpasset</h4>
+                    <button class="activebtn">4 dage</button>
+                    <button class="activebtn">2 personer</button>
+                </div>
+            </div>
+
+            <h3>Dine valgte måltider</h3>
+            <div class="kasser">
+                <div class="ret">
+                    <img class="icon-ret" src="img/ikoner/veg.webp" alt="">
+                    <img class="hjerte-ret" src="img/ikoner/hjerte-tomt.png" alt="">
+                    <img class="hjerte-fuldt-ret" src="img/ikoner/hjerte-fuldt.webp" alt="">
+                    <img class="ret-img" src="img/kasser/okonomiyaki.webp" alt="okonomiyaki">
+                    <h4 class="navn-ret">Okonomiyaki</h4>
+                    <p class="tid-ret">25 min.</p>
+                    <p class="beskrivelse-ret">Japansk kålpandekage.</p>
+                </div>
+
+                <div class="ret">
+                    <img class="icon-ret" src="img/ikoner/hav.webp" alt="">
+                    <img class="hjerte-ret" src="img/ikoner/hjerte-tomt.png" alt="">
+                    <img class="hjerte-fuldt-ret" src="img/ikoner/hjerte-fuldt.webp" alt="">
+                    <img class="ret-img" src="img/kasser/dumpling_1.webp" alt="Dumplings">
+                    <h4 class="navn-ret">Dumplings</h4>
+                    <p class="tid-ret">30 min.</p>
+                    <p class="beskrivelse-ret">Dumplings med rejer.</p>
+                </div>
+
+                <div class="ret">
+                    <img class="icon-ret" src="img/ikoner/kod.webp" alt="">
+                    <img class="hjerte-ret" src="img/ikoner/hjerte-tomt.png" alt="">
+                    <img class="hjerte-fuldt-ret" src="img/ikoner/hjerte-fuldt.webp" alt="">
+                    <img class="ret-img" src="img/kasser/yakiudon.webp" alt="Yaki Udon">
+                    <h4 class="navn-ret">Yaki Udon</h4>
+                    <p class="tid-ret">20 min.</p>
+                    <p class="beskrivelse-ret">Med bok choy og shitake svampe.</p>
+                </div>
+
+                <div class="ret">
+                    <img class="icon-ret" src="img/ikoner/veg.webp" alt="">
+                    <img class="hjerte-ret" src="img/ikoner/hjerte-tomt.png" alt="">
+                    <img class="hjerte-fuldt-ret" src="img/ikoner/hjerte-fuldt.webp" alt="">
+                    <img class="ret-img" src="img/kasser/curry.webp" alt="Japansk Curry">
+                    <h4 class="navn-ret">Japansk Curry</h4>
+                    <p class="tid-ret">30 min.</p>
+                    <p class="beskrivelse-ret">Karry med kartofler og gulerødder.</p>
+                </div>
+            </div>
+
+            <div class="tekst-kurv">
+                <p>Samlet pris 450 DKK</p>
+                <p>+ levering</p>
+            </div>
+            <div class="ikonerbund">
+                <a href="#">
+                    <img src="img/ikoner/bly.webp" alt="">
+                    <p>Rediger ordre</p>
+                </a>
+                <a href="annulleret.html">
+                    <img src="img/ikoner/skrald.webp" alt="">
+                    <p>Annuller ordre</p>
+                </a>
+            </div>
+            <div class="fortsaetknapper">
+                <button class="forsaet1">Fortsæt med at handle</button>
+                <button class="forsaet2">Fortsæt til<br>bestilling</button>
+            </div>
+        </div>
 
 
     </main>
