@@ -150,21 +150,27 @@ document.addEventListener("DOMContentLoaded", function() {
 // Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
 
 function toggleAnswer(id) {
-  var answer = document.getElementById('answer' + id);
-  var question = document.getElementById('question' + id);
+  let answer = document.getElementById('answer' + id);
+  let question = document.getElementById('question' + id);
+  let questionFed = document.getElementById('faq' + id);
+  let arrow = document.getElementById ('pil' + id);
 
   if (answer.style.display === 'block') {
       answer.style.display = 'none';
       question.style.backgroundColor = '#CEDFE3'; // Skift tilbage til den oprindelige farve
-      question.style.fontWeight = 'normal'; // Gør skriften normal (ikke fed)
+      question.classList.remove('faq-udvidetboks'); // Fjern udvidelsesklassen
+      questionFed.classList.remove('questions-fed'); // Fjern fed skrift-klassen
+      arrow.innerHTML = '&darr;'; // Får pilen til at pege nedad
+      arrow.style.paddingTop = '0'; // Retter pilen, så den er placeret som spørgsmålet
   } else {
       answer.style.display = 'block';
       question.style.backgroundColor = '#FFF9F2'; // Ændr farven til en ny farve
-      question.style.fontWeight = 'bold'; // Gør skriften fed
+      question.classList.add('faq-udvidetboks'); // Tilføj udvidelsesklassen
+      questionFed.classList.add('questions-fed'); // Tilføj fed skrift-klassen
+      arrow.innerHTML = '&uarr;'; // Får pilen til at pege opad
+      arrow.style.paddingTop = '1.6rem'; // Retter pilen, så den er placeret som spørgsmålet
   }
 }
-
-
 
 
 /*************************************************************************************************************************************/
