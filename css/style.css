@@ -957,6 +957,20 @@ main .pv {
     width: 95%;
   }
 
+  /* Styler svar i boksene */
+  .faq-answer{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #024158;
+  }
+
+  /* Styler links i svar til spørgsmål */
+  .link-faq {
+    text-decoration: none;
+    color: #024158;
+    font-weight: bold;
+  }
+
   /* Styler tekst nederst på siden */
   .h4-faq {
     font-size: 1.8rem;
