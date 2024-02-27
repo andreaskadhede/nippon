@@ -111,6 +111,21 @@ function moveToTheRight3() {
 }
 
 
+
+function toggleChoice(id) {
+  var drop = document.getElementById('drop' + id);
+  var knap = document.getElementById('knap' + id);
+  let arrow = document.getElementById ('pil' + id);
+
+  if (drop.style.display === 'block') {
+      drop.style.display = 'none';
+      arrow.innerHTML = '&darr;'; // Får pilen til at pege nedad
+  } else {
+    drop.style.display = 'block';
+    arrow.innerHTML = '&uarr;'; // Får pilen til at pege opad
+  }
+}
+
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/

@@ -531,7 +531,13 @@ main .pv {
     /* Gør at placeholdertekst i input feltet er mørke blå */
 ::placeholder {
     color: var(--dark-blue);
+    font-size: 25px;
   }
+
+    /* Gør skriften når man skriver i et input-felt større */
+input[type="text"] {
+    font-size:25px;
+}
 
 .tilmeldinput {
     display: flex;
@@ -622,6 +628,25 @@ main .pv {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+#knapinfo1, #knapinfo2 {
+    display: block;
+}
+
+#drop1, #drop2 {
+    display: none;
+    position: absolute;
+}
+
+#drop1 p, #drop2 p {
+    padding: 5px;
+    background: var(--beige);
+}
+
+#drop1 p:hover, #drop2:hover {
+    background: var(--red);
+    color: var(--beige);
 }
 
 /* byg selv informations liste */
@@ -1115,7 +1140,7 @@ main .pv {
     justify-content: center;
 }
 
-.activebtn:hover {
+#activebtn1:hover, #activebtn2:hover, #activebtn3:hover {
     border-radius: 10px;
     background: var(--red);
     color: var(--beige);
@@ -1201,6 +1226,97 @@ main .pv {
 /************************************************************ TILMELD DIG ************************************************************/
 /*************************************************************************************************************************************/
 
+/* TILMELD DIG Er du allerede tilmeldt? start */
+
+#tilmeld {
+    display: flex;
+    flex-direction: column;
+}
+
+#tilmeld h4 {
+    margin: 3.12rem 0 2rem 2.88rem;
+}
+
+.kanttil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 71.75rem;
+    height: 34.25rem;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    padding: 4rem;  
+    margin: 0 0 4.50rem 0;
+}
+
+.meld {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4, h5 {
+    color: var(--dark-blue);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.kanttil h5, .kanttilrod h5 {
+    margin-top: 3.56rem;
+    margin-bottom: 2.38rem;
+}
+
+.kanttil input {    
+    color: var(--dark-blue);
+    width: 64.5rem;
+    height: 6.6875rem;
+    border-radius: 6.25rem;
+    border: 2px solid var(--dark-blue);
+    background: var(--beige);
+    padding: 1.81rem;
+    margin:1rem;
+}
+/* TILMELD DIG Er du allerede tilmeldt? slut */
+
+/* TILMELD DIG Er du ny hos os? start */
+.kanttilrod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 71.75rem;
+    height: 34.25rem;
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    padding: 4rem;  
+    margin: 0 0 4.50rem 0;    
+}
+
+.kanttilrod input {    
+    color: var(--red);
+    width: 64.5rem;
+    height: 6.6875rem;
+    border-radius: 6.25rem;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    padding: 1.81rem;
+    margin:1rem;
+}
+
+    /* Opret dig button */
+.kanttilrod .opret {
+    width: 17.25rem;
+    height: 5rem;
+    margin-bottom: 3.69rem;
+    border-radius: 0.625rem;
+    font-size: 2.25rem;
+    color: var(--beige);
+    background-color: var(--red); 
+}
+/* TILMELD DIG Er du ny hos os? slut */
 
 /*************************************************************************************************************************************/
 /***************************************************************** UPS ***************************************************************/

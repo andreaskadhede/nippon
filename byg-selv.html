@@ -97,14 +97,34 @@
 
             <div>
                 <h3 class="knapperh3">Tilpas kassen</h3>
-                <button>
-                    <p class="knap1">2 personer</p>
-                    <p class="knap2">&darr;</p>
-                </button>
-                <button>
-                    <p class="knap1">4 dage</p>
-                    <p class="knap2">&darr;</p>
-                </button>
+                <div id="knapinfo1">
+                    <button id="knap1" onclick="toggleChoice(1)">
+                        <p class="knap1">2 personer</p>
+                        <p id="pil1" class="knap2">&darr;</p>
+                    </button>
+                    <div id="drop1">
+                        <p>1 person</p>
+                        <p>2 personer</p>
+                        <p>3 personer</p>
+                        <p>4 personer</p>
+                        <p>5 personer</p>
+                        <p>6 personer</p>
+                    </div>
+                </div>
+
+                <div id="knapinfo2">
+                    <button id="knap2" onclick="toggleChoice(2)">
+                        <p class="knap1">4 dage</p>
+                        <p id="pil2" class="knap2">&darr;</p>
+                    </button>
+                    <div id="drop2">
+                        <p>1 dag</p>
+                        <p>2 dage</p>
+                        <p>3 dage</p>
+                        <p>4 dage</p>
+                        <p>5 dage</p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- valgmulighedsknapper slut -->
