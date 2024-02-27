@@ -1014,6 +1014,38 @@ main .pv {
     padding: 0.5rem;
 }
 
+/* Jeg styler nu vores annulleret side */
+
+.annulleret {
+    height: 35rem;
+    border-radius: 0.625rem;
+    border: 3px solid #D33D34;
+    background: #FFF9F2;
+    width: 30rem;
+    text-align: center;
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+.annulleret-titel {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.annulleret-ikon {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.annulleret p {
+    color: #024158;
+    font-size: 16px;
+    padding: 0.5rem;
+}
+
+.link-annulleret {
+    
+}
 
 /*************************************************************************************************************************************/
 /*************************************************************** FOOTER **************************************************************/
