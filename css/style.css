@@ -16,7 +16,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
 h1, h2 {
@@ -211,22 +210,19 @@ nav {
 
 /* Velkommen start */
 .velkommen {
-    margin: 7rem 0 4rem 0;
+    margin: 7rem 0 3rem 0;
     display: flex;
     justify-content: center;
-    font-size: 160px;
+    font-size: 140px;
 }
 
-main .pv {
+.pv {
     margin: 0 0 4rem 0;
     text-align: center;
     color: var(--dark-blue);
     text-align: center;
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-style: normal;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 3.4375rem;
 }
 /* Velkommen slut */
 
@@ -234,12 +230,9 @@ main .pv {
 .h1f {
     display: flex;
     justify-content: center;
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
     font-size: 50px;
-    margin: 2rem 0 -4rem 0;
+    margin: 0;
+    line-height: 50px;
 }
 
 .solid {
@@ -247,17 +240,16 @@ main .pv {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1148px;
-    height: 656px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--light-blue);
+    padding: 50px 0;
+    width: 71.75rem;
 }
 
 .mks {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     margin: 0;
 }
@@ -267,7 +259,7 @@ main .pv {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 3rem 1rem;
     width: 269px;
     height: 313px;
     border-radius: 10px;
@@ -301,12 +293,12 @@ main .pv {
 .bestil {
     width: 17.25rem;
     height: 5rem;
-    margin-bottom: 3.69rem;
     border-radius: 0.625rem;
     font-size: 2.20rem;
     color: var(--beige);
     background-color: var(--dark-blue);
     border: none;
+    cursor: pointer;
 }
 
 .bestil:hover {
@@ -321,37 +313,34 @@ main .pv {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1148px;
-    height: 33rem;
+    margin: 7rem;
 } 
 
 .nobg h2 {
     text-align: center;
-    font-size: 120px;
+    font-size: 90px;
     margin: 0 0 1.56rem 0;
 }
 
 .nobg p {
     text-align: center;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     line-height: 3.125rem;
     color: var(--dark-blue);
     margin: 0;
 }
 
 .nobg a {
+    font-size: 1.5rem;
     color: var(--dark-blue);
-    text-decoration: none;
     font-weight: 700;
+    margin: 0;
 }
+
 /* FORSIDE Vidste du at... slut */
 
 /* FORSIDE Sådan fungerer det start */
 .kant h2 {
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
     font-size: 50px;
     margin: 0 0 4rem 0;
 }
@@ -395,13 +384,13 @@ main .pv {
 
 /* FORSIDE Tilmeld dig button */
 .tilmeld {
-    width: 17.25rem;
+    width: 15rem;
     height: 5rem;
     border-radius: 0.625rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--beige);
     background-color: var(--dark-blue);
-    margin: 5.38rem;   
+    margin: 6rem;   
     border: none; 
 }
 
@@ -412,24 +401,20 @@ main .pv {
 }
 
 /* FORSIDE FAQ start */
-.solid h2 {
-    font-family: 'headerFont';
-    letter-spacing: 2px;
-    color: var(--dark-blue);
-    font-weight: 250;
-    font-size: 80px;
+.faqb h2 {
+    font-size: 75px;
 }
 
 .faqa {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    gap: 3rem;
 }
 
 .faqa p {
     text-align: center;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     color: var(--dark-blue);
 }
 
@@ -451,10 +436,10 @@ main .pv {
 .faqa .sporgsmal .svar {
     display: flex;
     align-items: center;
-    margin: 1rem;
-    font-size: 1.25rem;
-    width: 40.1875rem;
-    height: 4.5625rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    width: 35rem;
+    height: 4.5rem;
     border-radius: 6.25rem;
     border: 2px solid var(--dark-blue);
     background: var(--light-blue);
@@ -509,26 +494,26 @@ main .pv {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1148px;
-    height: 656px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--light-blue);
     margin: 8rem 0 6.19rem 0;
+    padding: 3rem;
+    width: 71.75rem;
 }
 
 .solidt h2 {
-    font-size: 90px;    
+    font-size: 75px;    
 }
 
 .tilmeldk {
-    width: 17.25rem;
-    height: 5rem;
+    width: 18rem;
+    height: 4rem;
     border-radius: 0.625rem;
-    font-size: 2.20rem;
+    font-size: 2rem;
     color: var(--beige);
     background-color: var(--dark-blue);
-    margin: 3.75rem;
+    margin: 2rem;
     border: none;
 }
 
@@ -541,30 +526,30 @@ main .pv {
 .tilmeldkasse {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 4rem;
 }
 
 .solidt input {
     color: var(--dark-blue);
-    width: 23.3125rem;
-    height: 4.25rem;
+    height: 3.5rem;
+    width: 18rem;
     border-radius: 6.25rem;
     border: 2px solid var(--dark-blue);
     background: var(--beige);
     padding: 1.81rem;
-    margin: 2.25rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
     /* Gør at placeholdertekst i input feltet er mørke blå */
 ::placeholder {
     color: var(--dark-blue);
-    font-size: 25px;
+    font-size: 20px;
   }
 
     /* Gør skriften når man skriver i et input-felt større */
 input[type="text"] {
-    font-size:25px;
+    font-size:20px;
 }
 
 .tilmeldinput {
@@ -575,18 +560,17 @@ input[type="text"] {
 
 .inputborder {
     display: flex;
-    width: 27.5625rem;
-    height: 25rem;
+    width: 25rem;
     border-radius: 0.625rem;
     border: 2px solid var(--dark-blue);
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
 }
 
 .solidt .kassef {
-    width: 25.125rem;
-    height: 21.5625rem;
+    width: 20rem;
     margin: 1rem 0 0 1rem;
 }
 /* FORSIDE Tilmeld dig her slut */
