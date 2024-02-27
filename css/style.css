@@ -965,6 +965,7 @@ main .pv {
     background-color: #CEDFE3;
     margin-bottom: 2rem;
     padding: 2rem;
+    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -1049,6 +1050,8 @@ main .pv {
   .faq-udvidetboks {
     height: auto;
     display: block;
+    padding: 3rem;
+
   }
 
   /* Styler ny class så spørgsmålet bliver fed, når svaret kommer frem */
