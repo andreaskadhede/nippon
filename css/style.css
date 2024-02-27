@@ -683,13 +683,13 @@ input[type="text"] {
     border-radius: 10px;
     padding: 55px;
     margin-bottom: 64px;
-    width: 90%;
+    width: 80%;
 }
 
 #byg-selv-list li {
     color: var(--dark-blue);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 60px;
     list-style: decimal inside;
 }
@@ -699,7 +699,7 @@ input[type="text"] {
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -707,17 +707,22 @@ input[type="text"] {
     margin-bottom: 125px;
     gap: 45px;
 }
+ /* styling af baggrundsboks under "byg selv" */
+#maltidskasser-boks{
+    width: 80%;
+}
 
 /* overskrift - ugens udvalg/ugens menu */
 #ugens {
-    margin: 98px 0 30px;
-    font-size: 5rem;
+    font-size: 3rem;
+    margin: 5rem 0 -0.5rem;
 }
 
 .maltidskasser-boks h3 {
     color: var(--dark-blue);
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: lighter;
+    margin: 2rem 0;
 }
 
 .maltidskasser {
@@ -790,7 +795,7 @@ input[type="text"] {
 .beskrivelse-ret {
     color: var(--dark-blue);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 30px;
 }
 
@@ -815,24 +820,25 @@ input[type="text"] {
 .pris {
     border-radius: 10px;
     border: 2px solid var(--dark-blue);
-    width: 402px;
-    height: 80px;
+    width: 280px;
+    height: 62px;
     color: #024158;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-weight: 400;
-    padding: 20px;
+    line-height: 62px;
 }
 
 .bestil-knap {
     border-radius: 10px;
     border: none;
     background: var(--dark-blue);
-    width: 276px;
-    height: 80px;
+    width: 200px;
+    height: 62px;
+    line-height: 62px;
     color: var(--beige);
     text-align: center;
-    font-size: 36px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
