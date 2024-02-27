@@ -1110,6 +1110,10 @@ main .pv {
     font-weight: bold;
 }
 
+.ups a:hover {
+    color: #D33D34;
+}
+
 /* jeg styler knappen */
 
 .ups button {
@@ -1203,6 +1207,10 @@ main .pv {
     text-decoration: none;
     color: #024158;
     font-weight: bold;
+}
+
+.link-annulleret:hover {
+    color: #D33D34;
 }
 
 /*************************************************************************************************************************************/
