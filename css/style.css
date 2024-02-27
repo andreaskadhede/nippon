@@ -897,17 +897,6 @@ input[type="text"] {
     width: 52rem;
 }
 
-/* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
-.infographic > section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .infographic > section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   /* styler indholdet i infographic */
 
@@ -1005,6 +994,17 @@ input[type="text"] {
     color: #024158;
 }
 
+/* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
+.infographic > div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.infographic > div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /*************************************************************************************************************************************/
 /**************************************************************** FAQ ****************************************************************/
