@@ -542,7 +542,7 @@ main .pv {
     background-color: var(--red);
     border-radius: 10px;
     border: 3px solid var(--red);
-    color: #FFF9F2;
+    color: var(--beige);
     font-size: 20px;
     font-weight: 300;
     display: flex;
@@ -556,12 +556,6 @@ main .pv {
     border: 2px solid var(--red);
     background: var(--beige);
     color: var(--red);
-}
-
-#activebtn:hover {
-    border-radius: 10px;
-    background: var(--red);
-    color: var(--beige);
 }
 
 .knap1 {
@@ -605,6 +599,7 @@ main .pv {
     flex-direction: column;
     width: 90%;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     margin-bottom: 125px;
@@ -635,6 +630,7 @@ main .pv {
     margin-top: 15px;
     flex-wrap: wrap;
     gap: 60px 0;
+    max-width: 1145px;
 }
 
 .kasser-pil {
@@ -711,6 +707,7 @@ main .pv {
     display: flex;
     justify-content: space-between;
     margin: 100px 60px 60px 60px;
+    width: 90%;
 }
 
 .pris {
@@ -727,6 +724,7 @@ main .pv {
 
 .bestil-knap {
     border-radius: 10px;
+    border: none;
     background: var(--dark-blue);
     width: 276px;
     height: 80px;
@@ -736,8 +734,14 @@ main .pv {
     font-weight: 700;
 }
 
+.bestil-knap:hover {
+    border: 2px solid var(--dark-blue);
+    background: transparent;
+    color: var(--dark-blue);
+}
+
 /* ændre farven på valgmulighedskanpperne i forhold til, hvilken side man befinde sig på */
-#activebtn {
+#activebtn1, #activebtn2, #activebtn3 {
     border-radius: 10px;
     border: 2px solid var(--red);
     background: var(--beige);
@@ -973,6 +977,137 @@ main .pv {
 /************************************************************* DIN KURV **************************************************************/
 /*************************************************************************************************************************************/
 
+.kurv-boks {
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    background: var(--beige);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.kurv-boks h3 {
+    color: #024158;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 20px;
+}
+
+
+.kurvknapper {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 68px;
+}
+
+.kurvknapper div {
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kurvknapper button {
+    width: 231px;
+    height: 63px;
+    background-color: var(--beige);
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.activebtn:hover {
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--beige);
+}
+
+.tekst-kurv {
+    margin: 50px;
+}
+
+.tekst-kurv p {
+    padding: 5px;
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tekst-kurv p:first-child {
+    font-size: 30px;
+}
+
+.ikonerbund {
+    display: flex;
+    margin-bottom: 70px;
+    gap: 30px;
+}
+
+.ikonerbund p {
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.ikonerbund img {
+    width: 72px;
+}
+
+.fortsaetknapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.forsaet1 {
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+    background-color: var(--beige);
+    width: 269px;
+    height: 88px;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.forsaet2 {
+    border-radius: 10px;
+    border: none;
+    background: var(--dark-blue);
+    width: 269px;
+    height: 88px;
+    color: var(--beige);
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.forsaet1:hover {
+    border: 2px solid var(--beige);
+    background-color: var(--dark-blue);
+    color: var(--beige);
+}
+
+.forsaet2:hover {
+    border: 2px solid var(--dark-blue);
+    background-color: var(--beige);
+    color: var(--dark-blue);
+}
 
 /*************************************************************************************************************************************/
 /************************************************************ TILMELD DIG ************************************************************/
