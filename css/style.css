@@ -28,9 +28,10 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 10rem;
-    margin: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 /* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
@@ -998,8 +999,8 @@ input[type="text"] {
     border-radius: 100px;
     display: flex;
     flex-direction: column;
-    width: 65rem;
-    height: 6rem;
+    width: 45rem;
+    height: 5.5rem;
   }
   
   .faq-answer {
@@ -1018,7 +1019,7 @@ input[type="text"] {
 
   /* Styler pilen, der indikerer, at det er klikbart */
   .arrow {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #024158;
     width: 5%;
   }
@@ -1028,14 +1029,14 @@ input[type="text"] {
     background-color: #CEDFE3;
     border: 3px solid #024158;
     border-radius: 0.6rem;
-    width: 72rem;
+    width: 52rem;
     height: auto;
 
   }
 
   /* Styler spørgsmål i boksene */
   .h3-faq {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: lighter;
     color: #024158;
     width: 95%;
@@ -1043,14 +1044,14 @@ input[type="text"] {
 
   /* Styler svar i boksene */
   .faq-answer{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: lighter;
     color: #024158;
-    line-height: 3rem;
+    line-height: 2.4rem;
   }
 
   .faq-answer p{
-    padding-top: 2rem;
+    padding-top: 1.2rem;
   }
 
   /* Styler links i svar til spørgsmål */
@@ -1062,11 +1063,11 @@ input[type="text"] {
 
   /* Styler tekst nederst på siden */
   .h4-faq {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: lighter;
-    line-height: 3rem;
+    line-height: 2.4rem;
     color: #024158;
-    width: 72rem;
+    width: 51rem;
     text-align: center;
     margin: 5rem;
   }
@@ -1082,7 +1083,7 @@ input[type="text"] {
   /* Styler ny class så spørgsmålet bliver fed, når svaret kommer frem */
   .questions-fed {
     font-weight: 700;
-    padding-top: 1.6rem;
+    padding-top: 1.4rem;
   }
 
   

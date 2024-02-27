@@ -183,7 +183,7 @@ function toggleAnswer(id) {
       question.classList.add('faq-udvidetboks'); // Tilføj udvidelsesklassen
       questionFed.classList.add('questions-fed'); // Tilføj fed skrift-klassen
       arrow.innerHTML = '&uarr;'; // Får pilen til at pege opad
-      arrow.style.paddingTop = '1.6rem'; // Retter pilen, så den er placeret som spørgsmålet
+      arrow.style.paddingTop = '1.2rem'; // Retter pilen, så den er placeret som spørgsmålet
   }
 }
 
