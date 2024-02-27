@@ -227,7 +227,7 @@ main .pv {
 }
 /* Velkommen slut */
 
-/* Vores måltidskasser start */
+/* FORSIDE Vores måltidskasser start */
 .h1f {
     display: flex;
     justify-content: center;
@@ -236,12 +236,14 @@ main .pv {
     color: var(--dark-blue);
     font-weight: 250;
     font-size: 50px;
+    margin: 0;
 }
 
 .solid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     width: 1148px;
     height: 656px;
     border-radius: 10px;
@@ -254,6 +256,7 @@ main .pv {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* margin: 0 6.44rem 0 6.44rem; */
 }
 
 .kasse {
@@ -261,11 +264,13 @@ main .pv {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 3rem;
     width: 269px;
     height: 313px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--beige);
+    color: var(--dark-blue);
 }
 
 .kasse .kas {
@@ -291,20 +296,23 @@ main .pv {
 }
 
 .bestil {
-    width: 10%;
-    height: 10%;
+    width: 17.25rem;
+    height: 5rem;
+    margin-bottom: 3.69rem;
+    border-radius: 0.625rem;
+    font-size: 2.25rem;
+    color: var(--beige);
+    background-color: var(--dark-blue);
 }
-/* Vores måltidskasser slut */
+/* FORSIDE Vores måltidskasser slut */
 
-/* Vidste du start */
+/* FORSIDE Vidste du start */
 .nobg {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 1148px;
-    height: 656px;
-    border-radius: 10px;
-    border: 3px solid var(--dark-blue);   
+    height: 656px; 
 } 
 
 .nobg h2 {
@@ -315,62 +323,426 @@ main .pv {
 .nobg p {
     text-align: center;
     font-size: 1.625rem;
-    line-height: 3.125rem; /* 192.308% */
+    line-height: 3.125rem;
+    color: var(--dark-blue);
 }
-/* Vidste du slut */
+/* FORSIDE Vidste du slut */
 
-/* Sådan fungerer det start */
+/* FORSIDE Sådan fungerer det start */
+.kant h2 {
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
+}
+
 .kant {
     display: flex;
-    width: 70%;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 71.75rem;
+    height: 27.625rem;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
 }
 
-.kant img {
+.infog {
+    display: flex;
+    flex-direction: column;
+}
+
+.nudel {
+    display: flex;
+    justify-content: center;
+    width: 71.75rem;
+    height: 12.4375rem;
+    z-index: 2;
+}
+.infob {
     display: flex;
     flex-direction: row;
-    width: 25%;
+    justify-content: space-around;
+    margin-top: -12rem;
 }
 
-/* Sådan fungerer det slut */
+.graphic {
+    width: 13.13919rem;
+    height: 12.5rem;
+    z-index: 3;
+}
+/* FORSIDE Sådan fungerer det slut */
+
+/* FORSIDE Tilmeld dig button */
+.tilmeld {
+    width: 17.25rem;
+    height: 5rem;
+    border-radius: 0.625rem;
+    font-size: 2.25rem;
+    color: var(--beige);
+    background-color: var(--dark-blue);
+    margin: 5.38rem;    
+}
+
+/* FORSIDE FAQ start */
+.solid h2 {
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+    font-weight: 250;
+    font-size: 50px;
+}
+
+.faqa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faqa p {
+    text-align: center;
+    font-size: 1.625rem;
+    color: var(--dark-blue);
+}
+
+.sporgsmal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqa .sporgsmal p {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.faqa .sporgsmal .svar {
+    margin: 1rem;
+    font-size: 1.25rem;
+    width: 40.1875rem;
+    height: 4.5625rem;
+    border-radius: 6.25rem;
+    border: 2px solid var(--dark-blue);
+    background: var(--light-blue);
+}
+/* FORSIDE FAQ slut */
+
+/* FORSIDE Anmeldelser + Bæredygtighed start */
+.kanta {
+    display: flex;
+    flex-direction: row;
+}
+
+.kantak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.1875rem;
+    height: 21.875rem;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+}
+
+.kantak p {
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.kantak .genbrugf {
+    width: 11.375rem;
+    height: 11.375rem;
+}
+/* FORSIDE Anmeldelser + Bæredygtighed slut */
+
+/* FORSIDE Tilmeld dig her start */
+.tilmeldkasse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.solid input {
+    color: var(--dark-blue);
+    width: 23.3125rem;
+    height: 4.25rem;
+    border-radius: 6.25rem;
+    border: 2px solid var(--dark-blue);
+    background: var(--beige);
+    padding: 1.81rem;
+}
+
+    /* Gør at placeholdertekst i input feltet er mørke blå */
+::placeholder {
+    color: var(--dark-blue);
+  }
+
+.tilmeldinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputborder {
+    display: flex;
+    padding: 2rem;
+    width: 27.5625rem;
+    height: 25rem;
+    border-radius: 0.625rem;
+    border: 2px solid var(--dark-blue);
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.solid .kassef {
+    width: 25.125rem;
+    height: 21.5625rem;
+}
+/* FORSIDE Tilmeld dig her slut */
 
 /*************************************************************************************************************************************/
-/*********************************************************** YASAI KASSEN ************************************************************/
+/***************************************************** YASAI KASSEN + BYG SELV *******************************************************/
 /*************************************************************************************************************************************/
 
+/* overskrifter */
+.maltidskasseh1 {
+    margin-bottom: 0;
+}
 
-/*************************************************************************************************************************************/
-/************************************************************* BYG SELV **************************************************************/
-/*************************************************************************************************************************************/
+.maltidskasseh2 {
+    font-size: 6rem;
+    margin-bottom: 7.5rem;
+}
 
+/* valgmulioghedsknapper */
+.maltidknapper {
+    display: flex;
+    margin-bottom: 7.5rem;
+    gap: 68px;
+}
+
+.maltidknapper div {
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.maltidknapper button {
+    width: 231px;
+    height: 63px;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: 3px solid var(--red);
+    color: #FFF9F2;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.maltidknapper button:hover {
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    color: var(--red);
+}
+
+#activebtn:hover {
+    border-radius: 10px;
+    background: var(--red);
+    color: var(--beige);
+}
+
+.knap1 {
+    width: 60%;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.knap2 {
+    width: 20%;
+}
+
+.knapperh3 {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* byg selv informations liste */
+#byg-selv-list {
+    border: 3px solid var(--dark-blue);
+    border-radius: 10px;
+    padding: 55px;
+    margin-bottom: 64px;
+    width: 90%;
+}
+
+#byg-selv-list li {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    list-style: decimal inside;
+}
+
+/* måltidskasser */
 .maltidskasser-boks {
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     justify-content: center;
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue);
+    margin-bottom: 125px;
+    gap: 45px;
+}
+
+/* overskrift - ugens udvalg/ugens menu */
+#ugens {
+    margin: 98px 0 30px;
+    font-size: 5rem;
+}
+
+.maltidskasser-boks h3 {
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 400;
 }
 
 .maltidskasser {
     text-align: center;
-
 }
 
-.kasser {
+.kasser, .slider1, .slider2, .slider3 {
     display: flex;
     flex-direction: row;
-    gap: 61px;
     justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 60px 0;
 }
 
+.kasser-pil {
+    font-size: 50px;
+    border: none;
+    background: none;
+}
+
+/* måltid start */
 .ret {
     width: 269px;
     height: 313px;
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--beige);
+    margin: 0 20px;
+}
+
+.ret-img {
+    width: 205px;
+    height: 148px;
+    border-radius: 10px;
+    margin: 36px 32px 17px 32px;
+}
+
+.icon-ret {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    margin: 152px 0 0 195px;
+}
+
+.hjerte-ret, .hjerte-fuldt-ret {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    margin: 202px 0 0 21px;
+}
+
+.navn-ret {
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tid-ret {
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.beskrivelse-ret {
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.hjerte-fuldt-ret:hover {
+    opacity: 100;
+}
+
+.hjerte-fuldt-ret {
+    opacity: 0;
 }
 
 
+/* måltid slut */
+
+.knapperbund {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 60px 60px 60px;
+}
+
+.pris {
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+    width: 402px;
+    height: 80px;
+    color: #024158;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.bestil-knap {
+    border-radius: 10px;
+    background: var(--dark-blue);
+    width: 276px;
+    height: 80px;
+    color: var(--beige);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* ændre farven på valgmulighedskanpperne i forhold til, hvilken side man befinde sig på */
+#activebtn {
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    background: var(--beige);
+    color: var(--red);
+}
 /*************************************************************************************************************************************/
 /********************************************************* SÅDAN FUNGERER DET ********************************************************/
 /*************************************************************************************************************************************/
@@ -523,24 +895,27 @@ main .pv {
 /* Styler bokse med spørgsmål og svar */
 
 .faq-container {
-    width: 72rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    align-items: center; /* Centrerer indholdet horisontalt */
-    margin-top: 2rem;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 4rem;
   }
   
   .faq-question {
     background-color: #CEDFE3;
     margin-bottom: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #024158;
+    border: 2px solid #024158;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
+    width: 65rem;
+    height: 6rem;
   }
   
   .faq-answer {
@@ -559,8 +934,9 @@ main .pv {
 
   /* Styler "arrow", der indikerer, at det er klikbart */
   .arrow {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #024158;
+    width: 5%;
   }
 
   /* Styler boksen i baggrunden */
@@ -569,14 +945,28 @@ main .pv {
     border: 3px solid #024158;
     border-radius: 0.6rem;
     width: 72rem;
-    height: 88rem;
+    height: 78rem;
 
   }
 
-  /* Styler tekst nederst på siden */
-  h3 {
-    font-size: 2rem;
+  /* Styler spørgsmål i boksene */
+  .h3-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
     color: #024158;
+    width: 95%;
+  }
+
+  /* Styler tekst nederst på siden */
+  .h4-faq {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    color: #024158;
+    width: 72rem;
+    text-align: center;
+    margin: 5rem;
+
   }
   
 /*************************************************************************************************************************************/
@@ -657,7 +1047,7 @@ footer {
     border-top: solid var(--red) 1px;
 }
 
-#footer h2, footer a {
+#footer h3, footer a {
     color: var(--red);
     font-weight: 400;
 }
@@ -677,7 +1067,7 @@ footer {
     margin-top: 24px;
 }
 
-#footer-left h2 {
+#footer-left h3 {
     font-size: 32px;
     line-height: 39px;
     padding: 7px 0;
