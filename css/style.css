@@ -856,7 +856,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    border: 3px solid --dark-blue;
+    border: 3px solid var(--dark-blue);
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
@@ -996,7 +996,7 @@ input[type="text"] {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 2px solid --dark-blue;
+    border: 2px solid var(--dark-blue);
     border-radius: 100px;
     display: flex;
     flex-direction: column;
@@ -1028,7 +1028,7 @@ input[type="text"] {
   /* Styler boksen i baggrunden */
   .baggrundsboks {
     background-color: var(--light-blue);
-    border: 3px solid --dark-blue;
+    border: 3px solid var(--dark-blue);
     border-radius: 0.6rem;
     width: 52rem;
     height: auto;
@@ -1350,8 +1350,8 @@ h4, h5 {
 .ups {
     height: 50rem;
     border-radius: 0.625rem;
-    border: 3px solid --red;
-    background: --beige;
+    border: 3px solid var(--red);
+    background: var(--beige);
     width: 35rem;
     margin: 2rem;
     padding-top: 2rem;
@@ -1419,8 +1419,8 @@ h4, h5 {
 .succes {
     height: 35rem;
     border-radius: 0.625rem;
-    border: 3px solid --red;
-    background: --beige;
+    border: 3px solid var(--red);
+    background: var(--beige);
     width: 30rem;
     text-align: center;
     margin: 5rem;
@@ -1452,8 +1452,8 @@ h4, h5 {
 .annulleret {
     height: 35rem;
     border-radius: 0.625rem;
-    border: 3px solid --red;
-    background: --beige;
+    border: 3px solid var(--red);
+    background: var(--beige);
     width: 30rem;
     text-align: center;
     margin: 5rem;
