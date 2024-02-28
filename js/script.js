@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
 /**************************************************************** FAQ ****************************************************************/
 /*************************************************************************************************************************************/
 
-// Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på pilen 
+// Tilføjer en "if-else" for at svaret kommer frem, når der klikkes på spørgsmålet 
 
 function toggleAnswer(id) {
   let answer = document.getElementById('answer' + id);
@@ -172,16 +172,16 @@ function toggleAnswer(id) {
 
   if (answer.style.display === 'block') {
       answer.style.display = 'none';
-      question.style.backgroundColor = '#CEDFE3'; // Skift tilbage til den oprindelige farve
-      question.classList.remove('faq-udvidetboks'); // Fjern udvidelsesklassen
-      questionFed.classList.remove('questions-fed'); // Fjern fed skrift-klassen
+      question.style.backgroundColor = '#CEDFE3'; // Skifter tilbage til den oprindelige farve
+      question.classList.remove('faq-udvidetboks'); // Fjerner udvidelsesboksen
+      questionFed.classList.remove('questions-fed'); // Fjerner fed skrift
       arrow.innerHTML = '&darr;'; // Får pilen til at pege nedad
       arrow.style.paddingTop = '0'; // Retter pilen, så den er placeret som spørgsmålet
   } else {
       answer.style.display = 'block';
-      question.style.backgroundColor = '#FFF9F2'; // Ændr farven til en ny farve
-      question.classList.add('faq-udvidetboks'); // Tilføj udvidelsesklassen
-      questionFed.classList.add('questions-fed'); // Tilføj fed skrift-klassen
+      question.style.backgroundColor = '#FFF9F2'; // Ændrer farven til en ny farve
+      question.classList.add('faq-udvidetboks'); // Tilføjer udvidelsesboksen
+      questionFed.classList.add('questions-fed'); // Tilføjer fed skrift
       arrow.innerHTML = '&uarr;'; // Får pilen til at pege opad
       arrow.style.paddingTop = '1.2rem'; // Retter pilen, så den er placeret som spørgsmålet
   }
