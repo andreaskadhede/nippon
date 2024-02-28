@@ -641,25 +641,6 @@ input[type="text"] {
     font-weight: 400;
 }
 
-#knapinfo1, #knapinfo2 {
-    display: block;
-}
-
-#drop1, #drop2 {
-    display: none;
-    position: absolute;
-}
-
-#drop1 p, #drop2 p {
-    padding: 5px;
-    background: var(--beige);
-}
-
-#drop1 p:hover, #drop2:hover {
-    background: var(--red);
-    color: var(--beige);
-}
-
 /* byg selv informations liste */
 #byg-selv-list {
     border: 3px solid var(--dark-blue);
@@ -672,7 +653,7 @@ input[type="text"] {
 #byg-selv-list li {
     color: var(--dark-blue);
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 60px;
     list-style: decimal inside;
 }
@@ -689,10 +670,12 @@ input[type="text"] {
     border: 3px solid var(--dark-blue);
     margin-bottom: 125px;
     gap: 45px;
+    min-width: 1024px;
 }
  /* styling af baggrundsboks under "byg selv" */
 #maltidskasser-boks{
     width: 80%;
+    
 }
 
 /* overskrift - ugens udvalg/ugens menu */
@@ -704,7 +687,7 @@ input[type="text"] {
 .maltidskasser-boks h3 {
     color: var(--dark-blue);
     font-size: 28px;
-    font-weight: lighter;
+    font-weight: 300;
     margin: 2rem 0;
 }
 
@@ -720,11 +703,12 @@ input[type="text"] {
     margin-top: 15px;
     flex-wrap: wrap;
     gap: 60px 0;
-    max-width: 1145px;
+    min-width: 900px;
+    max-width: 1140px;
 }
 
 .kasser-pil {
-    font-size: 50px;
+    font-size: 40px;
     border: none;
     background: none;
 }
@@ -736,7 +720,7 @@ input[type="text"] {
     border-radius: 10px;
     border: 3px solid var(--dark-blue);
     background: var(--beige);
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .ret-img {
@@ -778,7 +762,7 @@ input[type="text"] {
 .beskrivelse-ret {
     color: var(--dark-blue);
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
 }
 
@@ -805,7 +789,7 @@ input[type="text"] {
     border: 2px solid var(--dark-blue);
     width: 280px;
     height: 62px;
-    color: #024158;
+    color: var(--dark-blue);
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
@@ -814,7 +798,7 @@ input[type="text"] {
 
 .bestil-knap {
     border-radius: 10px;
-    border: none;
+    border: 2px solid var(--dark-blue);
     background: var(--dark-blue);
     width: 200px;
     height: 62px;
@@ -858,7 +842,7 @@ input[type="text"] {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 200;
-    color: #024158;
+    color: var(--dark-blue);
     width: 52rem;
     padding-bottom: 2rem;
     line-height: 2.5rem;
@@ -872,7 +856,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    border: 3px solid #024158;
+    border: 3px solid --dark-blue;
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
@@ -975,7 +959,7 @@ input[type="text"] {
 .tekst-infographic {
     font-weight: 300;
     font-size: 20px;
-    color: #024158;
+    color: var(--dark-blue);
 }
 
 /* Styler at animationen bliver vidst løbende med at man scroller ned, er også brugt js */
@@ -1005,14 +989,14 @@ input[type="text"] {
   }
   
   .faq-question {
-    background-color: #CEDFE3;
+    background-color: var(--light-blue);
     margin-bottom: 2rem;
     padding: 2rem;
     padding-left: 3rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    border: 2px solid #024158;
+    border: 2px solid --dark-blue;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
@@ -1037,14 +1021,14 @@ input[type="text"] {
   /* Styler pilen, der indikerer, at det er klikbart */
   .arrow {
     font-size: 1.4rem;
-    color: #024158;
+    color: var(--dark-blue);
     width: 5%;
   }
 
   /* Styler boksen i baggrunden */
   .baggrundsboks {
-    background-color: #CEDFE3;
-    border: 3px solid #024158;
+    background-color: var(--light-blue);
+    border: 3px solid --dark-blue;
     border-radius: 0.6rem;
     width: 52rem;
     height: auto;
@@ -1054,16 +1038,16 @@ input[type="text"] {
   /* Styler spørgsmål i boksene */
   .h3-faq {
     font-size: 1.4rem;
-    font-weight: lighter;
-    color: #024158;
+    font-weight: 300;
+    color: var(--dark-blue);
     width: 95%;
   }
 
   /* Styler svar i boksene */
   .faq-answer{
     font-size: 1.4rem;
-    font-weight: lighter;
-    color: #024158;
+    font-weight: 300;
+    color: var(--dark-blue);
     line-height: 2.4rem;
   }
 
@@ -1074,16 +1058,16 @@ input[type="text"] {
   /* Styler links i svar til spørgsmål */
   .link-faq {
     text-decoration: none;
-    color: #024158;
-    font-weight: bold;
+    color: var(--dark-blue);
+    font-weight: 700;
   }
 
   /* Styler tekst nederst på siden */
   .h4-faq {
     font-size: 1.4rem;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 2.4rem;
-    color: #024158;
+    color: var(--dark-blue);
     width: 51rem;
     text-align: center;
     margin: 5rem;
@@ -1123,7 +1107,7 @@ input[type="text"] {
 }
 
 .kurv-boks h3 {
-    color: #024158;
+    color: var(--dark-blue);
     font-size: 35px;
     font-weight: 700;
     margin: 90px 0 60px;
@@ -1355,7 +1339,7 @@ h4, h5 {
 
 .ups-undertitel {
     font-size: 35px;
-    color: #024158;
+    color: var(--dark-blue);
     font-weight: 200;
     margin: 1rem;
 }
@@ -1365,8 +1349,8 @@ h4, h5 {
 .ups {
     height: 50rem;
     border-radius: 0.625rem;
-    border: 3px solid #D33D34;
-    background: #FFF9F2;
+    border: 3px solid --red;
+    background: --beige;
     width: 35rem;
     margin: 2rem;
     padding-top: 2rem;
@@ -1377,7 +1361,7 @@ h4, h5 {
 /* jeg styler teksten i sektionen */
 
 .ups p {
-    color: #024158;
+    color: var(--dark-blue);
     font-size: 20px;
     padding: 0.5rem;
     font-weight: 200;
@@ -1400,12 +1384,12 @@ h4, h5 {
 
 .ups a {
     text-decoration: none;
-    color: #024158;
-    font-weight: bold;
+    color: var(--dark-blue);
+    font-weight: 700;
 }
 
 .ups a:hover {
-    color: #D33D34;
+    color: var(--red);
 }
 
 /* jeg styler knappen */
@@ -1434,8 +1418,8 @@ h4, h5 {
 .succes {
     height: 35rem;
     border-radius: 0.625rem;
-    border: 3px solid #D33D34;
-    background: #FFF9F2;
+    border: 3px solid --red;
+    background: --beige;
     width: 30rem;
     text-align: center;
     margin: 5rem;
@@ -1457,7 +1441,7 @@ h4, h5 {
 /* styler links */
 
 .succes p {
-    color: #024158;
+    color: var(--dark-blue);
     font-size: 16px;
     padding: 0.5rem;
 }
@@ -1467,8 +1451,8 @@ h4, h5 {
 .annulleret {
     height: 35rem;
     border-radius: 0.625rem;
-    border: 3px solid #D33D34;
-    background: #FFF9F2;
+    border: 3px solid --red;
+    background: --beige;
     width: 30rem;
     text-align: center;
     margin: 5rem;
@@ -1488,7 +1472,7 @@ h4, h5 {
 }
 
 .annulleret p {
-    color: #024158;
+    color: var(--dark-blue);
     font-size: 16px;
     padding: 0.5rem;
 }
@@ -1497,12 +1481,12 @@ h4, h5 {
 
 .link-annulleret {
     text-decoration: none;
-    color: #024158;
-    font-weight: bold;
+    color: var(--dark-blue);
+    font-weight: 700;
 }
 
 .link-annulleret:hover {
-    color: #D33D34;
+    color: var(--red);
 }
 
 /*************************************************************************************************************************************/
